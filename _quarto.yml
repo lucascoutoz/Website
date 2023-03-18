@@ -1,0 +1,22 @@
+project:
+  type: website
+
+website:
+  title: "Lucas Couto"
+  site-url: https://lucascoutoz.com
+  description: "This is Lucas Couto's personal Blog."
+  navbar:
+    right:
+      - text: Blog
+        href: blog.qmd 
+      - icon: github
+        href: https://github.com/lucascoutoz
+      - icon: twitter
+        href: https://twitter.com/lucas_coutoz
+format:
+  html:
+    theme: journal
+    css: styles.css
+
+editor: visual
+

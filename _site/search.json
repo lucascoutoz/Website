@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Website",
+    "section": "",
+    "text": "Series\n\n[ggplot2-series](ggplot-series.html)\nThis series contains a great deal of tips, tricks and packages that you can use to level up your ggplot game.\n\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nSeries: DataViz Portfolio\n\n\n\n\n\n\n\n\n\n\n\n\n0 min\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nMar 17, 2023\n\n\n0 min\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nMar 14, 2023\n\n\n0 min\n\n\n\n\n\n\n\n\nThis is a dummy blog posts\n\n\n\n\n\n\n\n123\n\n\nSecond Tag\n\n\n\n\nThis is a test post. In this post, I try out different functionalities\n\n\n\n\n\n\nJun 1, 2022\n\n\n4 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/new_blog_post/post.html",
+    "href": "posts/new_blog_post/post.html",
+    "title": "This is a dummy blog posts",
+    "section": "",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit est nec dui eleifend, at dictum elit ullamcorper. Aliquam feugiat dictum bibendum. Praesent fermentum laoreet quam, cursus volutpat odio dapibus in. Fusce luctus porttitor vehicula. Donec ac tortor nisi. Donec at lectus tortor. Morbi tempor, nibh non euismod viverra, metus arcu aliquet elit, sed fringilla urna leo vel purus.\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit est nec dui eleifend, at dictum elit ullamcorper. Aliquam feugiat dictum bibendum. Praesent fermentum laoreet quam, cursus volutpat odio dapibus in. Fusce luctus porttitor vehicula. Donec ac tortor nisi. Donec at lectus tortor. Morbi tempor, nibh non euismod viverra, metus arcu aliquet elit, sed fringilla urna leo vel purus.\n\n\nThis is inline code plus a small code chunk.\n\nlibrary(tidyverse)\n\nggplot(mpg) + geom_jitter(aes(cty, hwy), size = 4, alpha = 0.5) \n\n\n\n\n\n\n\n\n\n\n::: panel-tabset ### Transforming OLS estimates\n\n\nCode\npreds_lm %>% \n      ggplot(aes(body_mass_g, bill_length_mm, col = correct)) +\n      geom_jitter(size = 4, alpha = 0.6) +\n      facet_wrap(vars(species)) +\n      scale_color_manual(values = c('grey60', thematic::okabe_ito(3)[3])) +\n      scale_x_continuous(breaks = seq(3000, 6000, 1000)) +\n      theme_minimal(base_size = 12) +\n      theme(\n        legend.position = 'top', \n        panel.background = element_rect(color = 'black'),\n        panel.grid.minor = element_blank()\n      ) +\n      labs(\n        x = 'Body mass (in g)',\n        y = 'Bill length (in mm)'\n      )\n\n\n\n\n\n\n\n\n\n    #| code-fold: true\n    glm.mod <- glm(sex ~ body_mass_g + bill_length_mm + species, family = binomial, data = dat)\n\n    preds <- dat %>% \n      mutate(\n        prob.fit = glm.mod$fitted.values,\n        prediction = if_else(prob.fit > 0.5, 'male', 'female'),\n        correct = if_else(sex == prediction, 'correct', 'incorrect')\n      )\n\n    preds %>% \n      ggplot(aes(body_mass_g, bill_length_mm, col = correct)) +\n      geom_jitter(size = 4, alpha = 0.6) +\n      facet_wrap(vars(species)) +\n      scale_x_continuous(breaks = seq(3000, 6000, 1000)) +\n      scale_color_manual(values = c('grey60', thematic::okabe_ito(3)[3])) +\n      theme_minimal(base_size = 10) +\n      theme(\n        legend.position = 'top', \n        panel.background = element_rect(color = 'black'),\n        panel.grid.minor = element_blank()\n      ) +\n      labs(\n        x = 'Body mass (in g)',\n        y = 'Bill length (in mm)'\n      )\n\n\n\n\n:::\n\n\n\\[\n\\int_0^1 f(x) \\ dx\n\\]\n\n\n\n\n\n\n\n\n    #| eval: false\n    #| echo: true\n    geom_density(\n      mapping = NULL,\n      data = NULL,\n      stat = \"density\",\n      position = \"identity\",\n      na.rm = FALSE,\n      orientation = NA,\n      show.legend = NA,\n      inherit.aes = TRUE,\n      outline.type = \"upper\"\n    )\n## geom_density: na.rm = FALSE, orientation = NA, outline.type = upper\n## stat_density: na.rm = FALSE, orientation = NA\n## position_identity\n\n\nstat_density(\n      mapping = NULL,\n      data = NULL,\n      geom = \"area\",\n      position = \"stack\",\n      bw = \"nrd0\",\n      adjust = 1,\n      kernel = \"gaussian\",\n      n = 512,\n      trim = FALSE,\n      na.rm = FALSE,\n      orientation = NA,\n      show.legend = NA,\n      inherit.aes = TRUE\n    )\n\n\n\n\n\n\n\n    #| fig-cap: \"Bla bla bla. This is a caption in the margin. Super cool isn't it?\"\n    #| fig-cap-location: margin\n    ggplot(data = gapminder::gapminder, mapping = aes(x = lifeExp, fill = continent)) +\n      stat_density(position = \"identity\", alpha = 0.5)"
+  },
+  {
+    "objectID": "archive.html",
+    "href": "archive.html",
+    "title": "Archive",
+    "section": "",
+    "text": "Series: DataViz Portfolio\n\n\n\n\n\n\n\n \n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\n\n\n\nMar 17, 2023\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\n\n\nMar 14, 2023\n\n\n\n\n\n\n\n\nThis is a dummy blog posts\n\n\n\n\n\n\n\n\n\nJun 1, 2022\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/DataViz/DataViz Series.html",
+    "href": "posts/DataViz/DataViz Series.html",
+    "title": "Series: DataViz Portfolio",
+    "section": "",
+    "text": "No matching items"
+  }
+]

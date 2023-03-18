@@ -1,0 +1,17 @@
+{
+  "listingMap": {
+    "index.qmd": [
+      "posts"
+    ],
+    "blog.qmd": [
+      "posts",
+      "posts/**/*.qmd"
+    ],
+    "archive.qmd": [
+      "posts/**/*.qmd"
+    ],
+    "posts\\DataViz\\DataViz Series.qmd": [
+      "posts/ggplot2-tips"
+    ]
+  }
+}
