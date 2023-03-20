@@ -4,7 +4,7 @@ project:
 website:
   title: "Lucas Couto"
   site-url: https://lucascoutoz.netlify.app/
-  description: "This is Lucas Couto's personal Blog."
+  description: "This is Lucas Couto's personal Blog. A"
   navbar:
     right:
       - text: Blog
