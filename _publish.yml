@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: "8f817c63-d5a8-40e4-89c5-281bd7582496"
+      url: "lucascoutoz.netlify.app"
