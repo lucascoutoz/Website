@@ -9,10 +9,14 @@ website:
     right:
       - text: Blog
         href: blog.qmd 
+      - text: Resume
+        href: https://github.com/lucascoutoz/CV/blob/main/CV_Lucas_Couto.pdf
+      - icon: twitter
+        href: https://twitter.com/lucas_coutoz  
       - icon: github
         href: https://github.com/lucascoutoz
-      - icon: twitter
-        href: https://twitter.com/lucas_coutoz
+      
+      
 format:
   html:
     theme: journal
