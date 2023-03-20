@@ -6,9 +6,9 @@
       version="2.0">
 <channel>
 <title>Lucas Couto</title>
-<link>https://lucascoutoz.netlify.app/</link>
+<link>https://lucascoutoz.netlify.app/blog.html</link>
 <atom:link href="https://lucascoutoz.netlify.app/blog.xml" rel="self" type="application/rss+xml"/>
-<description>This is Lucas Couto&#39;s personal Blog.</description>
+<description>This is Lucas Couto&#39;s personal Blog. A</description>
 <generator>quarto-1.2.335</generator>
 <lastBuildDate>Fri, 17 Mar 2023 03:00:00 GMT</lastBuildDate>
 <item>
@@ -244,7 +244,7 @@ No matching items
 </div>
 </div> ]]></description>
   <guid>https://lucascoutoz.netlify.app/posts/DataViz/DataViz Series.html</guid>
-  <pubDate>Sat, 18 Mar 2023 17:19:42 GMT</pubDate>
+  <pubDate>Mon, 20 Mar 2023 15:45:32 GMT</pubDate>
 </item>
 </channel>
 </rss>
