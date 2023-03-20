@@ -1,1 +1,1 @@
-Sitemap: https://lucascoutoz.com/sitemap.xml
+Sitemap: https://lucascoutoz.netlify.app/sitemap.xml
