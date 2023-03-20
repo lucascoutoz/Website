@@ -3,7 +3,7 @@ project:
 
 website:
   title: "Lucas Couto"
-  site-url: https://lucascoutoz.com
+  site-url: https://lucascoutoz.netlify.app/
   description: "This is Lucas Couto's personal Blog."
   navbar:
     right:
