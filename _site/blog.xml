@@ -6,15 +6,15 @@
       version="2.0">
 <channel>
 <title>Lucas Couto</title>
-<link>https://lucascoutoz.com/blog.html</link>
-<atom:link href="https://lucascoutoz.com/blog.xml" rel="self" type="application/rss+xml"/>
+<link>https://lucascoutoz.netlify.app/</link>
+<atom:link href="https://lucascoutoz.netlify.app/" rel="self" type="application/rss+xml"/>
 <description>This is Lucas Couto&#39;s personal Blog.</description>
 <generator>quarto-1.2.335</generator>
 <lastBuildDate>Fri, 17 Mar 2023 03:00:00 GMT</lastBuildDate>
 <item>
   <title>Post With Code</title>
   <dc:creator>Harlow Malloc</dc:creator>
-  <link>https://lucascoutoz.com/posts/post-with-code/index.html</link>
+  <link>https://https://lucascoutoz.netlify.app/posts/post-with-code/index.html</link>
   <description><![CDATA[ 
 
 
@@ -33,35 +33,35 @@
   <category>news</category>
   <category>code</category>
   <category>analysis</category>
-  <guid>https://lucascoutoz.com/posts/post-with-code/index.html</guid>
+  <guid>https://https://lucascoutoz.netlify.app/posts/post-with-code/index.html</guid>
   <pubDate>Fri, 17 Mar 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://lucascoutoz.com/posts/post-with-code/image.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://https://lucascoutoz.netlify.app/posts/post-with-code/image.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Welcome To My Blog</title>
   <dc:creator>Tristan O&#39;Malley</dc:creator>
-  <link>https://lucascoutoz.com/posts/welcome/index.html</link>
+  <link>https://https://lucascoutoz.netlify.app/posts/welcome/index.html</link>
   <description><![CDATA[ 
 
 
 
 
 <p>This is the first post in a Quarto blog. Welcome!</p>
-<p><img src="https://lucascoutoz.com/posts/welcome/thumbnail.jpg" class="img-fluid"></p>
+<p><img src="https://https://lucascoutoz.netlify.app/posts/welcome/thumbnail.jpg" class="img-fluid"></p>
 <p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
 
 
 
  ]]></description>
   <category>news</category>
-  <guid>https://lucascoutoz.com/posts/welcome/index.html</guid>
+  <guid>https://https://lucascoutoz.netlify.app/posts/welcome/index.html</guid>
   <pubDate>Tue, 14 Mar 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://lucascoutoz.com/posts/welcome/thumbnail.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://https://lucascoutoz.netlify.app/posts/welcome/thumbnail.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>This is a dummy blog posts</title>
   <dc:creator>Lucas Couto</dc:creator>
-  <link>https://lucascoutoz.com/posts/new_blog_post/post.html</link>
+  <link>https://https://lucascoutoz.netlify.app/posts/new_blog_post/post.html</link>
   <description><![CDATA[ 
 
 
@@ -80,7 +80,7 @@
 <span id="cb1-2"></span>
 <span id="cb1-3"><span class="fu" style="color: #4758AB;">ggplot</span>(mpg) <span class="sc" style="color: #5E5E5E;">+</span> <span class="fu" style="color: #4758AB;">geom_jitter</span>(<span class="fu" style="color: #4758AB;">aes</span>(cty, hwy), <span class="at" style="color: #657422;">size =</span> <span class="dv" style="color: #AD0000;">4</span>, <span class="at" style="color: #657422;">alpha =</span> <span class="fl" style="color: #AD0000;">0.5</span>) </span></code></pre></div>
 <div class="cell-output-display">
-<p><img src="https://lucascoutoz.com/posts/new_blog_post/post_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
+<p><img src="https://https://lucascoutoz.netlify.app/posts/new_blog_post/post_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </section>
@@ -111,7 +111,7 @@
 <span id="cb2-16">      )</span></code></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="https://lucascoutoz.com/posts/new_blog_post/post_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+<p><img src="https://https://lucascoutoz.netlify.app/posts/new_blog_post/post_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </section>
@@ -145,7 +145,7 @@
 <span id="cb3-25">        <span class="at" style="color: #657422;">y =</span> <span class="st" style="color: #20794D;">'Bill length (in mm)'</span></span>
 <span id="cb3-26">      )</span></code></pre></div>
 <div class="cell-output-display">
-<p><img src="https://lucascoutoz.com/posts/new_blog_post/post_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+<p><img src="https://https://lucascoutoz.netlify.app/posts/new_blog_post/post_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <pre><code>:::</code></pre>
@@ -208,7 +208,7 @@ font-style: italic;">## position_identity</span></span></code></pre></div>
 <span id="cb7-3">    <span class="fu" style="color: #4758AB;">ggplot</span>(<span class="at" style="color: #657422;">data =</span> gapminder<span class="sc" style="color: #5E5E5E;">::</span>gapminder, <span class="at" style="color: #657422;">mapping =</span> <span class="fu" style="color: #4758AB;">aes</span>(<span class="at" style="color: #657422;">x =</span> lifeExp, <span class="at" style="color: #657422;">fill =</span> continent)) <span class="sc" style="color: #5E5E5E;">+</span></span>
 <span id="cb7-4">      <span class="fu" style="color: #4758AB;">stat_density</span>(<span class="at" style="color: #657422;">position =</span> <span class="st" style="color: #20794D;">"identity"</span>, <span class="at" style="color: #657422;">alpha =</span> <span class="fl" style="color: #AD0000;">0.5</span>)</span></code></pre></div>
 <div class="cell-output-display">
-<p><img src="https://lucascoutoz.com/posts/new_blog_post/post_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
+<p><img src="https://https://lucascoutoz.netlify.app/posts/new_blog_post/post_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 
@@ -219,13 +219,13 @@ font-style: italic;">## position_identity</span></span></code></pre></div>
  ]]></description>
   <category>123</category>
   <category>Second Tag</category>
-  <guid>https://lucascoutoz.com/posts/new_blog_post/post.html</guid>
+  <guid>https://https://lucascoutoz.netlify.app/posts/new_blog_post/post.html</guid>
   <pubDate>Wed, 01 Jun 2022 03:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Series: DataViz Portfolio</title>
   <dc:creator>Lucas Couto</dc:creator>
-  <link>https://lucascoutoz.com/posts/DataViz/DataViz Series.html</link>
+  <link>https://https://lucascoutoz.netlify.app/posts/DataViz/DataViz Series.html</link>
   <description><![CDATA[ 
 
 
@@ -243,7 +243,7 @@ font-style: italic;">## position_identity</span></span></code></pre></div>
 No matching items
 </div>
 </div> ]]></description>
-  <guid>https://lucascoutoz.com/posts/DataViz/DataViz Series.html</guid>
+  <guid>https://https://lucascoutoz.netlify.app/posts/DataViz/DataViz Series.html</guid>
   <pubDate>Sat, 18 Mar 2023 17:19:42 GMT</pubDate>
 </item>
 </channel>
