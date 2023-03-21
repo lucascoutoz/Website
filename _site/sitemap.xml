@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lucascoutoz.netlify.app/index.html</loc>
-    <lastmod>2023-03-20T15:44:21.982Z</lastmod>
+    <lastmod>2023-03-21T15:19:37.114Z</lastmod>
   </url>
   <url>
     <loc>https://lucascoutoz.netlify.app/posts/new_blog_post/post.html</loc>
@@ -23,5 +23,9 @@
   <url>
     <loc>https://lucascoutoz.netlify.app/posts/post-with-code/index.html</loc>
     <lastmod>2023-03-17T21:17:14.815Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lucascoutoz.netlify.app/cv/index.html</loc>
+    <lastmod>2023-03-21T15:18:33.991Z</lastmod>
   </url>
 </urlset>

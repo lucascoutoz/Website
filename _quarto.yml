@@ -10,7 +10,7 @@ website:
       - text: Blog
         href: blog.qmd 
       - text: CV
-        href: https://github.com/lucascoutoz/CV/blob/main/CV_Lucas_Couto.pdf
+        href: "cv/index.qmd"
       - icon: twitter
         href: https://twitter.com/lucas_coutoz  
       - icon: github

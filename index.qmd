@@ -1,15 +1,17 @@
 ---
 title: "About"
-image: profile.jpg
+image: lamen.jpeg
 about:
-  template: jolla
+  template: trestles
   links:
+    - icon: file-pdf
+      text: CV
+      href: "cv/index.qmd"
+    - icon: researchgate 
+      href: https://www.researchgate.net/profile/Lucas-Couto-2
     - icon: twitter
       text: Twitter
       href: https://twitter.com/lucas_coutoz  
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com
     - icon: github
       text: Github
       href: https://github.com/lucascoutoz
