@@ -1,4 +1,8 @@
 ---
+icon:
+  pack:
+    ai: true
+    
 title: "About"
 image: lamen.jpeg
 about:
@@ -7,14 +11,19 @@ about:
     - icon: file-pdf
       text: CV
       href: "cv/index.qmd"
-    - icon: researchgate 
+    - icon: github
+      text: Github
+      href: https://github.com/lucascoutoz
+    - text: "{{< ai researchgate >}} ResearchGate"
       href: https://www.researchgate.net/profile/Lucas-Couto-2
     - icon: twitter
       text: Twitter
       href: https://twitter.com/lucas_coutoz  
-    - icon: github
-      text: Github
-      href: https://github.com/lucascoutoz
 ---
 
 About this blog
+
+```{=html}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+```
+{{< ai google-scholar >}}
