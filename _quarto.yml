@@ -19,8 +19,7 @@ website:
       
 format:
   html:
-    theme: journal
-    css: styles.css
+    theme: theme.scss
 
 editor: visual
 
