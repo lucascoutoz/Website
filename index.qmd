@@ -1,8 +1,4 @@
 ---
-icon:
-  pack:
-    ai: true
-    
 title: "About"
 image: lamen.jpeg
 about:
@@ -18,12 +14,11 @@ about:
       href: https://www.researchgate.net/profile/Lucas-Couto-2
     - icon: twitter
       text: Twitter
-      href: https://twitter.com/lucas_coutoz  
+      href: https://twitter.com/lucas_coutoz
 ---
 
-About this blog
+Welcome!
 
-```{=html}
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-```
-{{< ai google-scholar >}}
+I am currently a Master's Student in Political Science at the [University of Brasília](http://ipol.unb.br/), wherein I intend to conclude my studies by the end of June 2023. My research interests are centred on Bicameralism, Coalition Governments, Legislative Studies and Methodology. 
+
+Most of my work departs from a comparative perspective and has appeared in *Dados* and *The British Journal of Politics and International Relations*, among other outlets.
