@@ -8,7 +8,6 @@ cv:
   pdf: "CV_Lucas_Couto.pdf"
 ---
 
-````{=html}
 ```{css echo=FALSE}
 .embed-container {
     position: relative;
@@ -37,5 +36,4 @@ cv:
 <div class="embed-container">
   <iframe src="`r rmarkdown::metadata$cv$pdf`" style="border: 0.5px"></iframe>
 </div>
-
-````
+```

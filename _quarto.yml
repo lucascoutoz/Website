@@ -4,7 +4,7 @@ project:
 website:
   title: "Lucas Couto"
   site-url: https://lucascoutoz.netlify.app/
-  description: "This is Lucas Couto's personal Blog. A"
+  description: ""
   navbar:
     right:
       - text: Blog
@@ -15,11 +15,9 @@ website:
         href: https://twitter.com/lucas_coutoz  
       - icon: github
         href: https://github.com/lucascoutoz
-      
-      
+  
 format:
   html:
     theme: theme.scss
 
-editor: visual
 
