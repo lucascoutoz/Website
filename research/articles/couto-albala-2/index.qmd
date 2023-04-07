@@ -1,0 +1,29 @@
+---
+title: "A Coalescência Revisitada: O Cálculo Presidencial no Bicameralismo"
+date: 2022-03-11
+author:
+  - name: Lucas Couto
+    url: https://lucascoutoz.netlify.app/
+    orcid: 0000-0003-3278-499X
+    affiliation: Univeristy of Brasília
+  - name: Adrián Albala
+    url: http://www.pesquisar.unb.br/professor/adrian-nicolas-albala-young
+    orcid: 0000-0002-0444-2952
+    affiliation: Univeristy of Brasília
+categories:
+  - Bicameralism
+  - Coalitional Presidentialism
+  - Latin America
+  - Portfolio Allocation
+  - Presidentialism
+pub-info:
+  reference: >-
+    <strong>L. Couto</strong> and <a href="http://www.pesquisar.unb.br/professor/adrian-nicolas-albala-young/"> A. Albala</a>. “A Coalescência Revisitada: O Cálculo Presidencial no Bicameralismo.” <em>Dados</em> 66.4, 2023, pp. 1-45. DOI: <a href="10.1590/dados.2023.66.4.304"><code>10.1590/dados.2023.66.4.304</code></a>.
+  links:
+    - name: PDF
+      url: Couto e Albala (2023).pdf
+      icon: fa-solid fa-file-pdf
+      local: true
+doi: 10.1590/dados.2023.66.4.304
+toc: true
+---

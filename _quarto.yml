@@ -18,7 +18,7 @@ website:
 
   page-footer:
     left: "Powered by [Quarto](https://quarto.org/) and heavily based on [Andrew Heiss](https://www.andrewheiss.com/)."
-    right: "Also, could not be made without [Bea Milz's](https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/en/) and [Albert Rapp's](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html) tutorials"
+    right: "Also, could not be made without [Bea Milz's](https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/en/) and [Albert Rapp's](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html) tutorials."
      
   
 format:

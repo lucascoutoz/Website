@@ -27,5 +27,15 @@
   {
     "listing": "/posts/DataViz/DataViz Series.html",
     "items": []
+  },
+  {
+    "listing": "/research/index.html",
+    "items": [
+      "/research/articles/albala-borges-couto/index.html",
+      "/research/articles/albala-couto/index.html",
+      "/research/articles/couto-albala-2/index.html",
+      "/research/articles/couto-albala-1/index.html",
+      "/research/articles/couto-soares-livramento/index.html"
+    ]
   }
 ]

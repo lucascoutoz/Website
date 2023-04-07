@@ -25,5 +25,26 @@
   },
   "cv/index.qmd": {
     "index.html": "46821f49"
+  },
+  "research/index.Rmd": {
+    "index.html": "96e00f7b"
+  },
+  "research/articles/albala-borges-couto/index.qmd": {
+    "index.html": "4617a423"
+  },
+  "research/articles/albala-couto/index.qmd": {
+    "index.html": "571e0db2"
+  },
+  "research/articles/couto-albala-1/index.qmd": {
+    "index.html": "533729a1"
+  },
+  "research/articles/couto-albala-2/index.qmd": {
+    "index.html": "3fed3a7a"
+  },
+  "research/articles/couto-soares-livramento/index.qmd": {
+    "index.html": "ca40dc5c"
+  },
+  "research/index.qmd": {
+    "index.html": "8d4293ac"
   }
 }
