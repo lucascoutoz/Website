@@ -10,7 +10,7 @@ page-layout: full
 include-back-link: false
 toc-location: right
 ---
-## Journal Articles
+## Articles
 
 :::{#articles}
 :::

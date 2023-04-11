@@ -5,11 +5,11 @@ author:
   - name: Lucas Couto
     url: https://lucascoutoz.netlify.app/
     orcid: 0000-0003-3278-499X
-    affiliation: Univeristy of Brasília
+    affiliation: University of Brasília
   - name: Adrián Albala
     url: http://www.pesquisar.unb.br/professor/adrian-nicolas-albala-young
     orcid: 0000-0002-0444-2952
-    affiliation: Univeristy of Brasília
+    affiliation: University of Brasília
 categories:
   - Bicameralism
   - Coalitional Presidentialism

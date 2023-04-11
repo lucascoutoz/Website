@@ -11,6 +11,8 @@ website:
         href: blog.qmd 
       - text: CV
         href: "cv/index.qmd"
+      - text: "Research"
+        file: research/index.qmd
       - icon: twitter
         href: https://twitter.com/lucas_coutoz  
       - icon: github

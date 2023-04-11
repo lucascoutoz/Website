@@ -5,13 +5,13 @@ author:
   - name: Lucas Couto
     url: https://lucascoutoz.netlify.app/
     orcid: 0000-0003-3278-499X
-    affiliation: Univeristy of Brasília
+    affiliation: University of Brasília
   - name: Andéliton Soares
     orcid: 0000-0002-2883-968X
-    affiliation: Univeristy of Brasília
+    affiliation: University of Brasília
   - name: Bernardo Livramento 
     orcid: 0000-0002-7191-3013
-    affiliation: Univeristy of Brasília 
+    affiliation: University of Brasília 
 categories:
   - Coalitional Presidentialism
   - Latin America
@@ -21,7 +21,7 @@ pub-info:
     <strong>L. Couto</strong>, A. Soares, and B. Livramento. “Presidencialismo de coalizão: conceito e aplicação.” <em>Revista Brasileira de Ciência Política</em> 34, 2021, pp 1-39. DOI: <a href="10.1590/0103-3352.2021.34.241841"><code>10.1590/0103-3352.2021.34.241841</code></a>.
   links:
     - name: PDF
-      url: Couto, Soares e Livramento (2021).pdf
+      url: couto-soares-livramento.pdf
       icon: fa-solid fa-file-pdf
       local: true
 doi: 10.1590/0103-3352.2021.34.241841
