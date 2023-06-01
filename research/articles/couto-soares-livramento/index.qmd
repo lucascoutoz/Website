@@ -23,7 +23,7 @@ pub-info:
     - name: PDF
       url: couto-soares-livramento.pdf
       icon: fa-solid fa-file-pdf
-      local: true
+      #local: true
 doi: 10.1590/0103-3352.2021.34.241841
 toc: true
 ---

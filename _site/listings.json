@@ -1,13 +1,6 @@
 [
   {
-    "listing": "/index.html",
-    "items": [
-      "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html"
-    ]
-  },
-  {
-    "listing": "/blog.html",
+    "listing": "/archive.html",
     "items": [
       "/posts/DataViz/DataViz Series.html",
       "/posts/post-with-code/index.html",
@@ -16,7 +9,7 @@
     ]
   },
   {
-    "listing": "/archive.html",
+    "listing": "/blog.html",
     "items": [
       "/posts/DataViz/DataViz Series.html",
       "/posts/post-with-code/index.html",
@@ -34,8 +27,8 @@
       "/research/articles/albala-borges-couto/index.html",
       "/research/articles/albala-couto/index.html",
       "/research/articles/couto-albala-2/index.html",
-      "/research/articles/couto-albala-1/index.html",
-      "/research/articles/couto-soares-livramento/index.html"
+      "/research/articles/couto-soares-livramento/index.html",
+      "/research/book_chapters/couto-albala-1/index.html"
     ]
   }
 ]

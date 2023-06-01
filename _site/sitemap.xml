@@ -1,55 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lucascoutoz.netlify.app/index.html</loc>
-    <lastmod>2023-04-11T19:01:22.986Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lucascoutoz.netlify.app/posts/new_blog_post/post.html</loc>
-    <lastmod>2023-03-18T17:18:54.744Z</lastmod>
+    <loc>https://lucascoutoz.netlify.app/archive.html</loc>
+    <lastmod>2023-06-01T17:21:02.826Z</lastmod>
   </url>
   <url>
     <loc>https://lucascoutoz.netlify.app/blog.html</loc>
-    <lastmod>2023-03-31T14:10:33.100Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lucascoutoz.netlify.app/archive.html</loc>
-    <lastmod>2023-03-20T15:39:34.288Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lucascoutoz.netlify.app/posts/DataViz/DataViz Series.html</loc>
-    <lastmod>2023-03-24T21:20:45.470Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lucascoutoz.netlify.app/posts/post-with-code/index.html</loc>
-    <lastmod>2023-03-17T21:17:14.815Z</lastmod>
+    <lastmod>2023-06-01T17:21:51.022Z</lastmod>
   </url>
   <url>
     <loc>https://lucascoutoz.netlify.app/cv/index.html</loc>
-    <lastmod>2023-04-11T18:30:54.105Z</lastmod>
+    <lastmod>2023-06-01T17:21:08.074Z</lastmod>
   </url>
   <url>
-    <loc>https://lucascoutoz.netlify.app/research/index.html</loc>
-    <lastmod>2023-04-11T18:59:26.909Z</lastmod>
+    <loc>https://lucascoutoz.netlify.app/index.html</loc>
+    <lastmod>2023-06-01T17:21:09.235Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lucascoutoz.netlify.app/posts/DataViz/DataViz Series.html</loc>
+    <lastmod>2023-06-01T17:21:10.313Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lucascoutoz.netlify.app/posts/new_blog_post/post.html</loc>
+    <lastmod>2023-06-01T17:21:12.179Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lucascoutoz.netlify.app/posts/post-with-code/index.html</loc>
+    <lastmod>2023-06-01T17:21:13.917Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lucascoutoz.netlify.app/posts/welcome/index.html</loc>
+    <lastmod>2023-06-01T17:21:14.942Z</lastmod>
   </url>
   <url>
     <loc>https://lucascoutoz.netlify.app/research/articles/albala-borges-couto/index.html</loc>
-    <lastmod>2023-04-11T18:59:12.488Z</lastmod>
+    <lastmod>2023-06-01T17:21:16.013Z</lastmod>
   </url>
   <url>
     <loc>https://lucascoutoz.netlify.app/research/articles/albala-couto/index.html</loc>
-    <lastmod>2023-04-11T18:59:17.447Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lucascoutoz.netlify.app/research/articles/couto-albala-1/index.html</loc>
-    <lastmod>2023-04-11T18:59:20.190Z</lastmod>
+    <lastmod>2023-06-01T18:02:35.067Z</lastmod>
   </url>
   <url>
     <loc>https://lucascoutoz.netlify.app/research/articles/couto-albala-2/index.html</loc>
-    <lastmod>2023-04-11T18:59:22.768Z</lastmod>
+    <lastmod>2023-06-01T18:05:01.213Z</lastmod>
   </url>
   <url>
     <loc>https://lucascoutoz.netlify.app/research/articles/couto-soares-livramento/index.html</loc>
-    <lastmod>2023-04-11T18:38:30.618Z</lastmod>
+    <lastmod>2023-06-01T18:07:06.348Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lucascoutoz.netlify.app/research/book_chapters/couto-albala-1/index.html</loc>
+    <lastmod>2023-06-01T18:10:52.266Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lucascoutoz.netlify.app/research/index.html</loc>
+    <lastmod>2023-06-01T18:11:02.588Z</lastmod>
   </url>
 </urlset>

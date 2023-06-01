@@ -1,23 +1,17 @@
 {
   "listingMap": {
-    "index.qmd": [
-      "posts"
-    ],
-    "blog.qmd": [
-      "posts",
+    "archive.qmd": [
       "posts/**/*.qmd"
     ],
-    "archive.qmd": [
+    "blog.qmd": [
       "posts/**/*.qmd"
     ],
     "posts\\DataViz\\DataViz Series.qmd": [
       "posts/ggplot2-tips"
     ],
-    "research\\index.Rmd": [
-      "articles/*/index.qmd"
-    ],
     "research\\index.qmd": [
-      "articles/*/index.qmd"
+      "articles/*/index.qmd",
+      "book_chapters/*/index.qmd"
     ]
   }
 }

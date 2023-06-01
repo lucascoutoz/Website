@@ -22,9 +22,7 @@ pub-info:
    <a href="http://www.pesquisar.unb.br/professor/adrian-nicolas-albala-young/"> A. Albala</a> and <strong>L. Couto</strong>. “Question of Timing: Pre-Electoral Coalitions in Multiparty Presidential Regimes.” <em>Brazilian Political Science Review</em> 17.1, 2023, pp. 1-28. DOI: <a href="doi.org/10.7910/DVN/9FSI8S"><code>doi.org/10.7910/DVN/9FSI8S</code></a>.
   links:
     - name: PDF
-      url: Albala e Couto (2023).pdf
+      url: albala-couto.pdf
       icon: fa-solid fa-file-pdf
-      local: true
 doi: 10.7910/DVN/9FSI8S
-toc: true
 ---

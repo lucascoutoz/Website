@@ -45,7 +45,6 @@
 
 
 
-
 <p>This is the first post in a Quarto blog. Welcome!</p>
 <p><img src="https://lucascoutoz.netlify.app/posts/welcome/thumbnail.jpg" class="img-fluid"></p>
 <p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
@@ -244,7 +243,7 @@ No matching items
 </div>
 </div> ]]></description>
   <guid>https://lucascoutoz.netlify.app/posts/DataViz/DataViz Series.html</guid>
-  <pubDate>Fri, 31 Mar 2023 14:10:32 GMT</pubDate>
+  <pubDate>Thu, 01 Jun 2023 17:21:50 GMT</pubDate>
 </item>
 </channel>
 </rss>

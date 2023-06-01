@@ -6,6 +6,10 @@ listing:
     sort: "date desc"
     template: ../html/research/listing.ejs
     categories: true
+  - id: book_chapters
+    contents: "book_chapters/*/index.qmd"
+    sort: "date desc"
+    template: ../html/research/listing.ejs
 page-layout: full
 include-back-link: false
 toc-location: right
@@ -13,4 +17,9 @@ toc-location: right
 ## Articles
 
 :::{#articles}
+:::
+
+## Book Chapters
+
+:::{#book_chapters}
 :::

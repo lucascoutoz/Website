@@ -18,7 +18,6 @@ pub-info:
     <strong>L. Couto</strong> and <a href="http://www.pesquisar.unb.br/professor/adrian-nicolas-albala-young/"> A. Albala</a>. "QCA para Políticas Públicas: uma abordagem configuracional para estudar o Estado em ação." In <em>Desafios Metodológicos das Políticas Públicas baseadas em evidências</em>. Ed. by I. Fernandes. 2022, pp. 231-254.
   links:
     - name: PDF
-      url: Couto e Albala (2022).pdf
-      icon: fa-solid fa-file-pdf
-      local: true
+      url: coutoalbala2022.pdf
+      #local: true
 ---
