@@ -230,6 +230,39 @@ font-style: italic;">## position_identity</span></span></code></pre></div>
 
 
 
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://lucascoutoz.netlify.app/posts/DataViz/CEEPEC.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">PECs in CEE</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://lucascoutoz.netlify.app/posts/DataViz/presafrica.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Portfolio Allocation in Africa</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://lucascoutoz.netlify.app/posts/DataViz/ethnicpsiafrica.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Ethnicity and Party System Institutionalisation in Africa</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="https://lucascoutoz.netlify.app/posts/DataViz/pinktax.png" class="img-fluid" alt="Pinx Tax in LA"> <img src="https://lucascoutoz.netlify.app/posts/DataViz/ge.png" class="img-fluid" alt="Support for far-right parties in 2017 Germany"></p>
+</div>
+</div>
+</div>
 
 
 
@@ -243,7 +276,8 @@ No matching items
 </div>
 </div> ]]></description>
   <guid>https://lucascoutoz.netlify.app/posts/DataViz/DataViz Series.html</guid>
-  <pubDate>Thu, 01 Jun 2023 17:21:50 GMT</pubDate>
+  <pubDate>Thu, 20 Jul 2023 15:20:44 GMT</pubDate>
+  <media:content url="https://lucascoutoz.netlify.app/posts/DataViz/CEEPEC.png" medium="image" type="image/png" height="115" width="144"/>
 </item>
 </channel>
 </rss>
