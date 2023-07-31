@@ -235,16 +235,29 @@ font-style: italic;">## position_identity</span></span></code></pre></div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://lucascoutoz.netlify.app/posts/DataViz/CEEPEC.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">PECs in CEE</figcaption><p></p>
+<p><img src="https://lucascoutoz.netlify.app/posts/DataViz/cabbarbie.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Cabinet Size in Americas</figcaption><p></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://lucascoutoz.netlify.app/posts/DataViz/presafrica.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Portfolio Allocation in Africa</figcaption><p></p>
+<p><img src="https://lucascoutoz.netlify.app/posts/DataViz/CEEPEC.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">PECs in CEE</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="https://lucascoutoz.netlify.app/posts/DataViz/presafrica.png" class="img-fluid" alt="Portfolio Allocation in Africa"> <img src="https://lucascoutoz.netlify.app/posts/DataViz/pinktax.png" class="img-fluid" alt="Pinx Tax in LA"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://lucascoutoz.netlify.app/posts/DataViz/ge.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Support for far-right parties in 2017 Germany</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -257,9 +270,6 @@ font-style: italic;">## position_identity</span></span></code></pre></div>
 <p></p><figcaption class="figure-caption">Ethnicity and Party System Institutionalisation in Africa</figcaption><p></p>
 </figure>
 </div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="https://lucascoutoz.netlify.app/posts/DataViz/pinktax.png" class="img-fluid" alt="Pinx Tax in LA"> <img src="https://lucascoutoz.netlify.app/posts/DataViz/ge.png" class="img-fluid" alt="Support for far-right parties in 2017 Germany"></p>
 </div>
 </div>
 </div>
@@ -276,8 +286,8 @@ No matching items
 </div>
 </div> ]]></description>
   <guid>https://lucascoutoz.netlify.app/posts/DataViz/DataViz Series.html</guid>
-  <pubDate>Thu, 20 Jul 2023 15:20:44 GMT</pubDate>
-  <media:content url="https://lucascoutoz.netlify.app/posts/DataViz/CEEPEC.png" medium="image" type="image/png" height="115" width="144"/>
+  <pubDate>Mon, 31 Jul 2023 19:21:37 GMT</pubDate>
+  <media:content url="https://lucascoutoz.netlify.app/posts/DataViz/cabbarbie.png" medium="image" type="image/png" height="117" width="144"/>
 </item>
 </channel>
 </rss>

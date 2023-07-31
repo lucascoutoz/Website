@@ -12,12 +12,18 @@ page-layout: full
 title-block-banner: true
 ---
 ::: {layout-nrow=3}
+![Cabinet Size in Americas](cabbarbie.png)
+
+
 ![PECs in CEE](CEEPEC.png)
 
 ![Portfolio Allocation in Africa](presafrica.png)
+![Pinx Tax in LA](pinktax.png)
+
+![Support for far-right parties in 2017 Germany](ge.png)
+
 
 ![Ethnicity and Party System Institutionalisation in Africa](ethnicpsiafrica.png)
 
-![Pinx Tax in LA](pinktax.png)
-![Support for far-right parties in 2017 Germany](ge.png)
+
 :::
