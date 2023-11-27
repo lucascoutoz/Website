@@ -1,6 +1,6 @@
 ---
 title: "About"
-image: lamen.jpeg
+image: lamenn.jpeg
 about:
   template: trestles
   links:
@@ -19,7 +19,7 @@ about:
 
 Welcome!
 
-I am a Political Scientist who just defended his Master's dissertation in Political Science at the [University of Brasília](http://ipol.unb.br/) by July 2023. As of now, I am preparing to take the next step and be a PhD student somewhere. My research interests lie predominantly in Bicameralism, Coalition Governments, Legislative Studies and Methodology.
+I am Lucas, and I hold a Master of Science (MSc) degree in Political Science, which I obtained from the [University of Brasília](http://ipol.unb.br/) in July 2023. As of now, I am preparing to take the next step and be a PhD student somewhere. My research interests lie predominantly in Coalition Governments, Comparative Politics, Legislative Studies and Methodology.
 
 Most of my work departs from a comparative perspective and has appeared in *Dados* and *The British Journal of Politics and International Relations*, among other outlets.
 
