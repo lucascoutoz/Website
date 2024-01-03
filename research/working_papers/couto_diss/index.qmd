@@ -1,0 +1,22 @@
+---
+title: "Government Formation in Presidentialism: disentangling the combined effects of pre-electoral coalitions and legislative polarisation"
+date: 2024-01-03
+author:
+  - name: Lucas Couto
+    url: https://lucascoutoz.netlify.app/
+    orcid: 0000-0003-3278-499X
+    affiliation: University of Brasília
+categories:
+  - Coalitional Presidentialism
+  - Latin America
+  - Government Formation
+  - Pre-Electoral Coalitions
+  - Presidentialism 
+pub-info:
+  reference: >-
+    <strong>L. Couto</strong>. "Government Formation in Presidentialism: disentangling the combined effects of pre-electoral coalitions and legislative polarisation."
+  links:
+    - name: PDF
+      url: Manuscript.pdf
+      #local: true
+---

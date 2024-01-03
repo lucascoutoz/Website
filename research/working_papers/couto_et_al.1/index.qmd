@@ -1,0 +1,33 @@
+---
+title: "Party Switching in Elected Upper Chambers: The case of the Brazilian Senate"
+date: 2022-01-03
+author:
+  - name: Lucas Couto
+    url: https://lucascoutoz.netlify.app/
+    orcid: 0000-0003-3278-499X
+    affiliation: University of Brasília
+  - name: Amanda Vitória Lopes
+    url: http://lattes.cnpq.br/5139407303038024
+    orcid: 0000-0002-9906-0622
+    affiliation: University of Brasília
+  - name: Adrián Albala
+    url: http://www.pesquisar.unb.br/professor/adrian-nicolas-albala-young
+    orcid: 0000-0002-0444-2952
+    affiliation: University of Brasília
+  - name: Vinícius Paley
+    affiliation: University of Brasília
+categories:
+  - Brazil
+  - Party Switching
+  - Upper Chamber
+
+pub-info:
+  reference: >-
+   <strong>L. Couto</strong>, <a href="http://lattes.cnpq.br/5139407303038024"> A. V. Lopes</a>, <a href="http://www.pesquisar.unb.br/professor/adrian-nicolas-albala-young/"> A. Albala</a>, and V. Paley. "Party Switching in Elected Upper Chambers: The case of the Brazilian Senate."
+  links:
+    - name: PDF
+      url: Manuscript_PS.pdf
+      icon: fa-solid fa-file-pdf
+#doi: 10.1177/13691481211056852
+toc: true
+---

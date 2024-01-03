@@ -10,6 +10,10 @@ listing:
     contents: "book_chapters/*/index.qmd"
     sort: "date desc"
     template: ../html/research/listing.ejs
+  - id: working_papers
+    contents: "working_papers/*/index.qmd"
+    sort: "date desc"
+    template: ../html/research/listing.ejs
 page-layout: full
 include-back-link: false
 toc-location: right
@@ -22,4 +26,9 @@ toc-location: right
 ## Book Chapters
 
 :::{#book_chapters}
+:::
+
+## Working Papers
+
+:::{#working_papers}
 :::

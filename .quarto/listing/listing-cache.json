@@ -11,7 +11,8 @@
     ],
     "research\\index.qmd": [
       "articles/*/index.qmd",
-      "book_chapters/*/index.qmd"
+      "book_chapters/*/index.qmd",
+      "working_papers/*/index.qmd"
     ]
   }
 }

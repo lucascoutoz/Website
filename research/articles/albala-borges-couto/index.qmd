@@ -1,5 +1,5 @@
 ---
-title: "Question of Timing: Pre-Electoral Coalitions in Multiparty Presidential Regimes"
+title: "Pre-electoral coalitions and cabinet stability in presidential systems"
 date: 2022-03-11
 author:
   - name: Adrián Albala
