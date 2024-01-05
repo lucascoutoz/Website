@@ -29,5 +29,5 @@ pub-info:
     - name: PDF
       url: albala_et_al.pdf
       icon: fa-solid fa-file-pdf
-      local: true
+      #local: true
 ---
