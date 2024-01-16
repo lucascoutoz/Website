@@ -122,8 +122,8 @@ coal1 %>% ggplot(aes(as.factor(coal_agree_public), share, fill = as.factor(coal_
           scale_fill_manual(values=c("#999999", "#4a6741")) + scale_colour_manual(values=c("#999999", "#4a6741")) +
           facet_wrap(~full_name) +
           coord_flip(expand=FALSE) +
-          labs(title = "Public Written Coalition Governments in Western Europe",
-               subtitle = "They are paramount in most Western European countries!",
+          labs(title = "Written Coalition Agreements in Western Europe",
+               subtitle = "They are paramount in coalition governments of most Western European countries!",
                x = "",
                y = "",
                caption = "Lucas Couto | Data: Bergman et al. (2021) | DataViz Inspiration: @rubenbmathisen") + 

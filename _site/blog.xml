@@ -123,8 +123,8 @@
 <span id="cb1-73">          <span class="fu" style="color: #4758AB;">scale_fill_manual</span>(<span class="at" style="color: #657422;">values=</span><span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">"#999999"</span>, <span class="st" style="color: #20794D;">"#4a6741"</span>)) <span class="sc" style="color: #5E5E5E;">+</span> <span class="fu" style="color: #4758AB;">scale_colour_manual</span>(<span class="at" style="color: #657422;">values=</span><span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">"#999999"</span>, <span class="st" style="color: #20794D;">"#4a6741"</span>)) <span class="sc" style="color: #5E5E5E;">+</span></span>
 <span id="cb1-74">          <span class="fu" style="color: #4758AB;">facet_wrap</span>(<span class="sc" style="color: #5E5E5E;">~</span>full_name) <span class="sc" style="color: #5E5E5E;">+</span></span>
 <span id="cb1-75">          <span class="fu" style="color: #4758AB;">coord_flip</span>(<span class="at" style="color: #657422;">expand=</span><span class="cn" style="color: #8f5902;">FALSE</span>) <span class="sc" style="color: #5E5E5E;">+</span></span>
-<span id="cb1-76">          <span class="fu" style="color: #4758AB;">labs</span>(<span class="at" style="color: #657422;">title =</span> <span class="st" style="color: #20794D;">"Public Written Coalition Governments in Western Europe"</span>,</span>
-<span id="cb1-77">               <span class="at" style="color: #657422;">subtitle =</span> <span class="st" style="color: #20794D;">"They are paramount in most Western European countries!"</span>,</span>
+<span id="cb1-76">          <span class="fu" style="color: #4758AB;">labs</span>(<span class="at" style="color: #657422;">title =</span> <span class="st" style="color: #20794D;">"Written Coalition Agreements in Western Europe"</span>,</span>
+<span id="cb1-77">               <span class="at" style="color: #657422;">subtitle =</span> <span class="st" style="color: #20794D;">"They are paramount in coalition governments of most Western European countries!"</span>,</span>
 <span id="cb1-78">               <span class="at" style="color: #657422;">x =</span> <span class="st" style="color: #20794D;">""</span>,</span>
 <span id="cb1-79">               <span class="at" style="color: #657422;">y =</span> <span class="st" style="color: #20794D;">""</span>,</span>
 <span id="cb1-80">               <span class="at" style="color: #657422;">caption =</span> <span class="st" style="color: #20794D;">"Lucas Couto | Data: Bergman et al. (2021) | DataViz Inspiration: @rubenbmathisen"</span>) <span class="sc" style="color: #5E5E5E;">+</span> </span>
@@ -246,7 +246,7 @@ No matching items
 </div>
 </div> ]]></description>
   <guid>https://lucascoutoz.netlify.app/posts/DataViz/DataViz Series.html</guid>
-  <pubDate>Tue, 16 Jan 2024 17:42:19 GMT</pubDate>
+  <pubDate>Tue, 16 Jan 2024 18:05:44 GMT</pubDate>
   <media:content url="https://lucascoutoz.netlify.app/posts/DataViz/pwcoalagree.png" medium="image" type="image/png" height="108" width="144"/>
 </item>
 </channel>
