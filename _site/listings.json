@@ -3,8 +3,6 @@
     "listing": "/archive.html",
     "items": [
       "/posts/DataViz/DataViz Series.html",
-      "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html",
       "/posts/new_blog_post/post.html"
     ]
   },
@@ -12,8 +10,6 @@
     "listing": "/blog.html",
     "items": [
       "/posts/DataViz/DataViz Series.html",
-      "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html",
       "/posts/new_blog_post/post.html"
     ]
   },
