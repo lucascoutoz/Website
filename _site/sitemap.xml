@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lucascoutoz.netlify.app/archive.html</loc>
-    <lastmod>2024-02-27T17:35:53.066Z</lastmod>
+    <lastmod>2024-02-27T18:10:36.156Z</lastmod>
   </url>
   <url>
     <loc>https://lucascoutoz.netlify.app/blog.html</loc>
-    <lastmod>2024-02-27T17:37:36.243Z</lastmod>
+    <lastmod>2024-02-27T18:10:38.343Z</lastmod>
   </url>
   <url>
     <loc>https://lucascoutoz.netlify.app/cv/index.html</loc>
@@ -91,5 +91,9 @@
   <url>
     <loc>https://lucascoutoz.netlify.app/posts/b2024_2/post.html</loc>
     <lastmod>2024-02-27T17:37:12.160Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lucascoutoz.netlify.app/posts/b2024_2/physical-violence-parliament.html</loc>
+    <lastmod>2024-02-27T18:10:56.633Z</lastmod>
   </url>
 </urlset>
