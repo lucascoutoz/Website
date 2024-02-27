@@ -8,6 +8,10 @@
       warning: false
     editor_options: 
       chunk_output_type: console
+    format:
+      html:
+        code-fold: true
+        code-summary: "Show the code"    
 ---
 
 # Welcome to my first post ever!

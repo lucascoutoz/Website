@@ -70,5 +70,11 @@
   },
   "research/articles/5. couto-soares-livramento/index.qmd": {
     "index.html": "7344de0b"
+  },
+  "posts/b2024_2/b2024_2.qmd": {
+    "b2024_2.html": "24b3e90c"
+  },
+  "posts/b2024_2/post.qmd": {
+    "post.html": "b765ff84"
   }
 }
