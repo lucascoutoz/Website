@@ -1,0 +1,150 @@
+---
+    title: 'The Ideology of the Head of Government: A Glimpse from Latin American'
+    date: '2024-03-14'
+    categories: ['Data Visualization', 'Ideology', 'Latin America']
+    description: 'In this post, we take a look at the ideology of heads of government in Latin America'
+    execute: 
+      message: false
+      warning: false
+    editor_options: 
+      chunk_output_type: console
+    format:
+      html:
+        code-fold: true
+        code-summary: "Show the code"
+---
+
+# Ideology
+
+This month's visualisation is slightly different from what we've done so far. Unlike previous months, I did not seek inspiration from submissions to [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday). Specifically, I want to try to do something I miserably failed in recent years. Thus far, I've never got to make an animated graph =(. However, this is the month when I'll actually manage to do it!
+
+To this end, I'll rely on [The Global Leader Ideology dataset](https://github.com/bastianherre/global-leader-ideologies) from [Bastian Herre](https://www.bastianherre.com/data). From a worldwide perspective, the data identify the ideological position of heads of government and leaders on an economic scale. More specifically, these political actors are classified as “leftist”, “centrist”, or “rightist”. A thorough explanation behind this classification can be further accessed on the dataset's page. Importantly, a discussion about the coding of each head of government is also [available](https://github.com/bastianherre/global-leader-ideologies/tree/main/Country%20profiles/pdf).
+
+As Latin America has been the focus of research, I chose it as the region for which we'll see the ideological preferences of heads of government. Without further ado, let's get into the plot.
+
+# Animated Map
+
+A few comments are noteworthy:
+
+1) I changed the colour scheme for the ideological classification when compared to the [original graphs](https://github.com/bastianherre/global-leader-ideologies/blob/main/Graphs/ideology_lac.png), mainly to show rightist leaders in darker blue and leftist leaders in darker red.
+
+2) Some small Caribbean states are not legible, but this is due to the adopted scale. This can be changed with the parameter *alpha* within geom_sf.
+
+3) To make the animated map, I gladly followed many steps from [Rodrigo Zamith](https://dds.rodrigozamith.com/cartography-and-journalism/creating-animated-maps-with-r/) and [Mel Moreno and Mathieu Basille](https://r-spatial.org/r/2018/10/25/ggplot2-sf.html). There are other great guides on the internet, a quick search will make you find a plethora of them! 
+
+::: {.callout-tip}
+## Regional Trends
+
+Some periods are marked by governments throughout the region leaning towards either the left (the Pink Tide in the early 2000s) or the right, as had been the case lately. A book examining the emergence of the new right in the region is scheduled to be released later this year. If you are interested, save the name: 
+
+Borges, André; Lloyd, Ryan; Vommaro, Gabriel, (eds.) **The Recasting of the Latin American Right: Polarization and Conservative Reactions**. Cambridge University Press.
+:::
+
+
+![The Ideology of Heads of Government in Latin America Over the Years](Ideology_LA.gif)
+
+### Code
+
+```{r ad}
+##before you proceed, you should download the data from: https://github.com/bastianherre/global-leader-ideologies
+
+
+#Load packages
+library(gganimate)
+library(ggtext)
+library(haven)
+library(ragg)
+library(rmapshaper)
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(showtext)
+library(sf)
+library("tidylog", warn.conflicts = FALSE)
+library(tidyverse)
+
+#load data
+ideologue <- read_dta("global_leader_ideologies.dta")
+
+#data wrangling
+LA <- ideologue %>%
+      filter(country_name %in% c("Argentina", "Bahamas", "Barbados", "Belize", "Bolivia", "Brazil",
+                                 "Chile", "Colombia", "Costa Rica", "Cuba", "Dominican Republic", "Ecuador",
+                                 "El Salvador", "Guatemala", "Guyana", "Haiti", "Honduras", "Jamaica", "Mexico", "Nicaragua", "Panama", 
+                                 "Paraguay", "Peru", "Suriname", "Trinidad and Tobago", "Uruguay", "Venezuela")) %>%
+      select("name" = country_name, year, hog, hog_ideology) %>%
+      mutate(name = ifelse(name == "Dominican Republic", "Dominican Rep.", name)) %>%
+      mutate(hog_ideology = ifelse(hog_ideology == "none", "no ideology", hog_ideology)) %>%
+      mutate(hog_ideology = ifelse(hog_ideology == "not applicable", "no information", hog_ideology)) %>%
+      mutate(hog_ideology = factor(hog_ideology, levels = c("rightist", "centrist", 
+                                                            "leftist", "no ideology", "no information")))
+
+#Maps
+world <- ne_countries(scale = "medium", 
+                      returnclass = "sf")
+
+sousou <- world %>%
+          filter(region_wb == "Latin America & Caribbean") 
+
+sousou_points <- st_centroid(sousou) %>%
+                 cbind(st_coordinates(st_centroid(sousou$geometry)))
+
+frier <- sousou_points %>%
+          st_drop_geometry() %>%
+          select(name, X, Y) %>%
+          left_join(LA) %>%
+          left_join(sousou) 
+
+#font
+font_add(family = "regular", "Outfit-Regular.ttf")
+font_add(family = "bold", "Outfit-Bold.ttf")
+showtext_auto() 
+
+#plot
+frier %>% arrange(year) %>%
+          #filter(year == 2015) %>% #if you want to see the data in a particular point in time
+          ggplot() +
+          geom_sf(data = frier, aes(geometry = geometry), inherit.aes = FALSE) +
+          geom_sf(data = frier %>% filter(!is.na(hog_ideology)), 
+                  aes(fill = hog_ideology, geometry = geometry), 
+                      size = .15, color = "white") +
+          geom_sf(data =  frier %>% filter(is.na(hog_ideology)) %>% 
+                  mutate(hog_ideology = ifelse(is.na(hog_ideology), "no information", hog_ideology)),
+                  aes(fill = hog_ideology, geometry = geometry),
+                  size = .15, color = "white") +
+          coord_sf(expand = FALSE, clip = "off") +
+          scale_fill_manual(values = c("#0000ff", "#A865C9",  "#ff0000", "#000000", "#bebebe"),
+                            labels = c("Rightist", "Centrist", "Leftist", "No Ideology", "No Information")) +
+          xlab("") + ylab("") +
+          labs(title = "Ideology of the Head of Government - Year: {current_frame}",
+               caption = "Lucas Couto | Data: Herre (2023)") +
+          transition_manual(year) +
+          ease_aes('linear') +
+          theme(##Background
+                panel.border=element_blank(),
+                panel.grid.major = element_blank(),
+                panel.grid.minor = element_blank(),
+                plot.background = element_rect(fill = "#ffffff", linetype = 'blank'),
+                #plot.margin = margin( , 0.5, , , "cm"),
+                panel.background = element_rect(fill = "#ffffff"),
+                plot.caption = element_text(family="regular", size=13, hjust=1.1, vjust=1.5),
+                plot.caption.position = "plot",
+                ##Axes
+                axis.text = element_blank(),
+                axis.ticks = element_blank(),
+                ##Legend
+                legend.text = element_text(size=15, family="regular"),
+                legend.position = c(0.1, 0.2),
+                legend.key.size = unit(1.0, "cm"),
+                legend.spacing.y = unit(0, "cm"),
+                 ##Titles
+                plot.title=element_text(family = "bold", hjust = 0.0, vjust = 0.0, size = 15, color = "black"),
+                plot.title.position = "plot") +
+                guides(fill = guide_legend(title = "")) -> p
+
+
+#The code below will create a folder with several figures in a png format. Combine them in specific sites to transform them into an animated map in GIF!
+#animate(p, width=1050, height=750, duration=15, end_pause=5, rrenderer=file_renderer(dir="anim_img/"))
+
+```
+
+
