@@ -1,6 +1,6 @@
 ---
 title: Curriculum vitæ
-date: 2024-02-27
+date: 2024-03-22
 title-block-banner: "#0044b0"
 published-title: CV last updated
 engine: knitr 

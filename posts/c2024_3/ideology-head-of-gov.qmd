@@ -1,5 +1,5 @@
 ---
-    title: 'The Ideology of the Head of Government: A Glimpse from Latin American'
+    title: 'The Ideology of the Head of Government: A Glimpse from Latin America'
     date: '2024-03-14'
     categories: ['Data Visualization', 'Ideology', 'Latin America']
     description: 'In this post, we take a look at the ideology of heads of government in Latin America'
