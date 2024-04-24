@@ -11,7 +11,9 @@ listing:
 page-layout: full
 title-block-banner: true
 ---
-::: {layout-nrow=4}
+::: {layout-nrow=5}
+
+![Right-Left Placements of New Zealand Parties](NZ.png)
 
 ![The Ideology of Heads of Government in Latin America Over the Years](Ideology_LA.gif)
 

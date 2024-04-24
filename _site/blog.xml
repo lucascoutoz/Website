@@ -699,11 +699,21 @@ font-style: italic;">##Plot----</span></span>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
+<p><img src="https://lucascoutoz.netlify.app/posts/DataViz/NZ.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Right-Left Placements of New Zealand Parties</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
 <p><img src="https://lucascoutoz.netlify.app/posts/DataViz/Ideology_LA.gif" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The Ideology of Heads of Government in Latin America Over the Years</figcaption><p></p>
 </figure>
 </div>
 </div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -712,8 +722,6 @@ font-style: italic;">##Plot----</span></span>
 </figure>
 </div>
 </div>
-</div>
-<div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -722,6 +730,8 @@ font-style: italic;">##Plot----</span></span>
 </figure>
 </div>
 </div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -730,8 +740,6 @@ font-style: italic;">##Plot----</span></span>
 </figure>
 </div>
 </div>
-</div>
-<div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -740,11 +748,11 @@ font-style: italic;">##Plot----</span></span>
 </figure>
 </div>
 </div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <p><img src="https://lucascoutoz.netlify.app/posts/DataViz/presafrica.png" class="img-fluid" alt="Portfolio Allocation in Africa"> <img src="https://lucascoutoz.netlify.app/posts/DataViz/pinktax.png" class="img-fluid" alt="Pinx Tax in LA"></p>
 </div>
-</div>
-<div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -753,6 +761,8 @@ font-style: italic;">##Plot----</span></span>
 </figure>
 </div>
 </div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -776,8 +786,8 @@ No matching items
 </div>
 </div> ]]></description>
   <guid>https://lucascoutoz.netlify.app/posts/DataViz/DataViz Series.html</guid>
-  <pubDate>Wed, 24 Apr 2024 17:43:53 GMT</pubDate>
-  <media:content url="https://lucascoutoz.netlify.app/posts/DataViz/Ideology_LA.gif" medium="image" type="image/gif"/>
+  <pubDate>Wed, 24 Apr 2024 18:06:13 GMT</pubDate>
+  <media:content url="https://lucascoutoz.netlify.app/posts/DataViz/NZ.png" medium="image" type="image/png" height="108" width="144"/>
 </item>
 </channel>
 </rss>
