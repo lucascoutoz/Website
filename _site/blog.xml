@@ -33,12 +33,12 @@
 <li><p>Some small Caribbean states are not legible, but this is due to the adopted scale. This can be changed with the parameter <em>alpha</em> within geom_sf.</p></li>
 <li><p>To make the animated map, I gladly followed many steps from <a href="https://dds.rodrigozamith.com/cartography-and-journalism/creating-animated-maps-with-r/">Rodrigo Zamith</a> and <a href="https://r-spatial.org/r/2018/10/25/ggplot2-sf.html">Mel Moreno and Mathieu Basille</a>. There are other great guides on the internet, a quick search will make you find a plethora of them!</p></li>
 </ol>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Regional Trends
 </div>
 </div>
@@ -50,7 +50,7 @@ Regional Trends
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://lucascoutoz.netlify.app/posts/c2024_3/Ideology_LA.gif" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">The Ideology of Heads of Government in Latin America Over the Years</figcaption><p></p>
+<figcaption class="figure-caption">The Ideology of Heads of Government in Latin America Over the Years</figcaption>
 </figure>
 </div>
 <section id="code" class="level3">
@@ -628,7 +628,7 @@ No matching items
 </div>
 </div> ]]></description>
   <guid>https://lucascoutoz.netlify.app/posts/DataViz/DataViz Series.html</guid>
-  <pubDate>Fri, 22 Mar 2024 14:40:43 GMT</pubDate>
+  <pubDate>Wed, 24 Apr 2024 17:28:27 GMT</pubDate>
   <media:content url="https://lucascoutoz.netlify.app/posts/DataViz/Ideology_LA.gif" medium="image" type="image/gif"/>
 </item>
 </channel>
