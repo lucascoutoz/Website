@@ -10,7 +10,139 @@
 <atom:link href="https://lucascoutoz.netlify.app/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.2.335</generator>
-<lastBuildDate>Wed, 24 Apr 2024 03:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 27 May 2024 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>Hyper-Presidentialism in Chile?</title>
+  <dc:creator>Lucas Couto</dc:creator>
+  <link>https://lucascoutoz.netlify.app/posts/e2024_5/hyper-chile.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="presidential-powers-in-chile" class="level1">
+<h1>Presidential Powers in Chile</h1>
+<p>Historically, Chilean presidents have been considered so powerful that scholarly literature has constantly framed Chile as a ‘hyper-presidential’ system. However, this notion has recently been put into question. Some examples of this revisionist literature include <a href="https://www.taylorfrancis.com/chapters/oa-edit/10.4324/9781003324249-4/hyper-presidentialism-question-christopher-mart%C3%ADnez-andr%C3%A9s-dockendorff?context=ubx&amp;refId=11aab70f-9fd4-4faf-8813-98b1006afd1b">Martínez and Dockendorff (2023)</a> and <a href="https://journals.sagepub.com/doi/10.1177/1866802X241245727">Mimica and Navia (2024)</a>.</p>
+<p>This blog post uses data from Mimica and Navia to display their argument graphically. More specifically, I plot whether presidential bills represent the lion’s share of the legislative output of the legislative process in Chile.<sup>1</sup></p>
+<p>The DataViz is not anything so fancy, just a line plot with a shaded area beneath it. I don’t know why, but this sort of graph seems to have become popular lately, perhaps due to the fact that it is slightly more attractive than a <em>simple</em> line plot.</p>
+</section>
+<section id="the-fall-of-presidential-dominance" class="level1">
+<h1>The Fall of Presidential Dominance?</h1>
+<p>In summary, Mimica and Navia (2024) argue that Chile cannot be considered a hyper-presidentialist system anymore because presidents do not dominate the legislative process anymore, and this can be seen by the decreasing share of presidential bills over time (relative to bills initiated by legislators themselves) and the decreasing share of presidents’ enacted laws in comparison to all enacted legislation. The plot below depicts this latter aspect.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://lucascoutoz.netlify.app/posts/e2024_5/chile_pres.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Conversion of Bills into Laws in Chile: the increasingly appalling performance of Chilean presidents</figcaption><p></p>
+</figure>
+</div>
+<p>As the visualisation shows, the presidential dominance over the legislative process has gone from very high (in Aylwin’s term) to low (in Piñera II’s term). Soon after the redemocratisation process, the president accounted for roughly 90% of all laws enacted. Thirty years into the future, the president accounted for only 36% of all bills that later became laws.</p>
+<p>Mimica and Navia (2024) argue that this has been the result of a series of constitutional and electoral reforms, as well as the late <em>estallido social</em>. Martínez and Dockendorff (2023) present other arguments to back their argument of why hyper-presidentialism is no longer a thing in Chilean politics. If you are interested, I strongly suggest you read both papers and the broad literature on presidentialism and the formal vested powers of presidents. To pique your interest, how can the contrast between the measures of presidential powers<sup>2</sup> and the actual performance of presidents in the legislative arena not be interesting?</p>
+<p>Well, this is it for this month. See you next month!</p>
+<section id="code" class="level3">
+<h3 class="anchored" data-anchor-id="code">Code</h3>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="co" style="color: #5E5E5E;">#Load packages</span></span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;">library</span>(ggrepel)</span>
+<span id="cb1-3"><span class="fu" style="color: #4758AB;">library</span>(ggtext)</span>
+<span id="cb1-4"><span class="fu" style="color: #4758AB;">library</span>(lubridate)</span>
+<span id="cb1-5"><span class="fu" style="color: #4758AB;">library</span>(ragg)</span>
+<span id="cb1-6"><span class="fu" style="color: #4758AB;">library</span>(showtext)</span>
+<span id="cb1-7"><span class="fu" style="color: #4758AB;">library</span>(tidyverse)</span>
+<span id="cb1-8"></span>
+<span id="cb1-9"><span class="co" style="color: #5E5E5E;">#data from Mimica and Navia (2024)</span></span>
+<span id="cb1-10">cl <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">tribble</span>(</span>
+<span id="cb1-11">  <span class="sc" style="color: #5E5E5E;">~</span>period, <span class="sc" style="color: #5E5E5E;">~</span>pp_share, <span class="sc" style="color: #5E5E5E;">~</span>president,</span>
+<span id="cb1-12">  <span class="st" style="color: #20794D;">"1990-1994"</span>, <span class="fl" style="color: #AD0000;">88.8</span>, <span class="st" style="color: #20794D;">"Aylwin"</span>, </span>
+<span id="cb1-13">  <span class="st" style="color: #20794D;">"1994-2000"</span>, <span class="fl" style="color: #AD0000;">69.4</span>, <span class="st" style="color: #20794D;">"Frei"</span>,</span>
+<span id="cb1-14">  <span class="st" style="color: #20794D;">"2000-2006"</span>, <span class="fl" style="color: #AD0000;">64.5</span>, <span class="st" style="color: #20794D;">"Lagos"</span>,</span>
+<span id="cb1-15">  <span class="st" style="color: #20794D;">"2006-2010"</span>, <span class="fl" style="color: #AD0000;">61.0</span>, <span class="st" style="color: #20794D;">"Bachelet I"</span>, </span>
+<span id="cb1-16">  <span class="st" style="color: #20794D;">"2010-2014"</span>, <span class="fl" style="color: #AD0000;">62.7</span>, <span class="st" style="color: #20794D;">"Piñera I"</span>,</span>
+<span id="cb1-17">  <span class="st" style="color: #20794D;">"2014-2018"</span>, <span class="fl" style="color: #AD0000;">52.2</span>, <span class="st" style="color: #20794D;">"Bachelet II"</span>,</span>
+<span id="cb1-18">  <span class="st" style="color: #20794D;">"2018-2022"</span>, <span class="fl" style="color: #AD0000;">36.3</span>, <span class="st" style="color: #20794D;">"Piñera II"</span></span>
+<span id="cb1-19">)</span>
+<span id="cb1-20"></span>
+<span id="cb1-21"><span class="co" style="color: #5E5E5E;">#prep</span></span>
+<span id="cb1-22">cl1 <span class="ot" style="color: #003B4F;">&lt;-</span> cl <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb1-23">  <span class="fu" style="color: #4758AB;">mutate</span>(<span class="at" style="color: #657422;">period =</span> <span class="fu" style="color: #4758AB;">factor</span>(period, <span class="at" style="color: #657422;">levels =</span> <span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">"1990-1994"</span>, <span class="st" style="color: #20794D;">"1994-2000"</span>, <span class="st" style="color: #20794D;">"2000-2006"</span>,</span>
+<span id="cb1-24">                                            <span class="st" style="color: #20794D;">"2006-2010"</span>, <span class="st" style="color: #20794D;">"2010-2014"</span>, <span class="st" style="color: #20794D;">"2014-2018"</span>,  </span>
+<span id="cb1-25">                                            <span class="st" style="color: #20794D;">"2018-2022"</span>))) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb1-26">  <span class="fu" style="color: #4758AB;">mutate</span>(<span class="at" style="color: #657422;">pp_share_label =</span> <span class="fu" style="color: #4758AB;">paste0</span>(pp_share, <span class="st" style="color: #20794D;">"%"</span>))</span>
+<span id="cb1-27"></span>
+<span id="cb1-28"></span>
+<span id="cb1-29"><span class="co" style="color: #5E5E5E;">#font</span></span>
+<span id="cb1-30"><span class="fu" style="color: #4758AB;">font_add</span>(<span class="at" style="color: #657422;">family =</span> <span class="st" style="color: #20794D;">"regular"</span>, <span class="st" style="color: #20794D;">"Outfit-Regular.ttf"</span>)</span>
+<span id="cb1-31"><span class="fu" style="color: #4758AB;">font_add</span>(<span class="at" style="color: #657422;">family =</span> <span class="st" style="color: #20794D;">"bold"</span>, <span class="st" style="color: #20794D;">"Outfit-Bold.ttf"</span>)</span>
+<span id="cb1-32"><span class="fu" style="color: #4758AB;">showtext_auto</span>() </span>
+<span id="cb1-33"></span>
+<span id="cb1-34"><span class="co" style="color: #5E5E5E;">#plot</span></span>
+<span id="cb1-35">cl1 <span class="sc" style="color: #5E5E5E;">%&gt;%</span> <span class="fu" style="color: #4758AB;">ggplot</span>(<span class="fu" style="color: #4758AB;">aes</span>(period, pp_share, <span class="at" style="color: #657422;">group =</span> <span class="dv" style="color: #AD0000;">1</span>, <span class="at" style="color: #657422;">label =</span> pp_share_label)) <span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb1-36">  <span class="fu" style="color: #4758AB;">geom_area</span>(<span class="at" style="color: #657422;">fill =</span> <span class="st" style="color: #20794D;">"#0033a0"</span>, <span class="at" style="color: #657422;">alpha =</span> <span class="fl" style="color: #AD0000;">0.2</span>) <span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb1-37">  <span class="fu" style="color: #4758AB;">geom_line</span>(<span class="at" style="color: #657422;">colour =</span> <span class="st" style="color: #20794D;">"#0033a0"</span>) <span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb1-38">  <span class="fu" style="color: #4758AB;">geom_point</span>(<span class="at" style="color: #657422;">colour =</span> <span class="st" style="color: #20794D;">"#0033a0"</span>) <span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb1-39">  <span class="fu" style="color: #4758AB;">geom_text_repel</span>(<span class="at" style="color: #657422;">colour =</span> <span class="st" style="color: #20794D;">"#0033a0"</span>, <span class="at" style="color: #657422;">xlim =</span> <span class="fu" style="color: #4758AB;">c</span>(<span class="sc" style="color: #5E5E5E;">-</span><span class="cn" style="color: #8f5902;">Inf</span>, <span class="cn" style="color: #8f5902;">Inf</span>), <span class="at" style="color: #657422;">ylim =</span> <span class="fu" style="color: #4758AB;">c</span>(<span class="sc" style="color: #5E5E5E;">-</span><span class="cn" style="color: #8f5902;">Inf</span>, <span class="cn" style="color: #8f5902;">Inf</span>), <span class="at" style="color: #657422;">nudge_y =</span> <span class="dv" style="color: #AD0000;">5</span>, <span class="at" style="color: #657422;">min.segment.length =</span> <span class="cn" style="color: #8f5902;">Inf</span>, <span class="at" style="color: #657422;">family =</span> <span class="st" style="color: #20794D;">"regular"</span>, <span class="at" style="color: #657422;">size =</span> <span class="dv" style="color: #AD0000;">12</span>) <span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb1-40">  <span class="fu" style="color: #4758AB;">annotate</span>(<span class="st" style="color: #20794D;">"text"</span>, <span class="at" style="color: #657422;">x =</span> <span class="fl" style="color: #AD0000;">1.1</span>, <span class="at" style="color: #657422;">y =</span> <span class="dv" style="color: #AD0000;">20</span>, <span class="at" style="color: #657422;">label =</span> <span class="st" style="color: #20794D;">"Aylwin"</span>, <span class="at" style="color: #657422;">angle =</span><span class="st" style="color: #20794D;">'90'</span>, <span class="at" style="color: #657422;">size =</span> <span class="dv" style="color: #AD0000;">16</span>, <span class="at" style="color: #657422;">alpha =</span> <span class="fl" style="color: #AD0000;">0.40</span>, <span class="at" style="color: #657422;">color =</span> <span class="st" style="color: #20794D;">"#0033a0"</span>, <span class="at" style="color: #657422;">family =</span> <span class="st" style="color: #20794D;">"bold"</span>) <span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb1-41">  <span class="fu" style="color: #4758AB;">annotate</span>(<span class="st" style="color: #20794D;">"text"</span>, <span class="at" style="color: #657422;">x =</span> <span class="dv" style="color: #AD0000;">2</span>, <span class="at" style="color: #657422;">y =</span> <span class="dv" style="color: #AD0000;">20</span>, <span class="at" style="color: #657422;">label =</span> <span class="st" style="color: #20794D;">"Frei"</span>, <span class="at" style="color: #657422;">angle =</span><span class="st" style="color: #20794D;">'90'</span>, <span class="at" style="color: #657422;">size =</span> <span class="dv" style="color: #AD0000;">16</span>, <span class="at" style="color: #657422;">alpha =</span> <span class="fl" style="color: #AD0000;">0.40</span>, <span class="at" style="color: #657422;">color =</span> <span class="st" style="color: #20794D;">"#0033a0"</span>, <span class="at" style="color: #657422;">family =</span> <span class="st" style="color: #20794D;">"bold"</span>) <span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb1-42">  <span class="fu" style="color: #4758AB;">annotate</span>(<span class="st" style="color: #20794D;">"text"</span>, <span class="at" style="color: #657422;">x =</span> <span class="dv" style="color: #AD0000;">3</span>, <span class="at" style="color: #657422;">y =</span> <span class="dv" style="color: #AD0000;">20</span>, <span class="at" style="color: #657422;">label =</span> <span class="st" style="color: #20794D;">"Lagos"</span>, <span class="at" style="color: #657422;">angle =</span><span class="st" style="color: #20794D;">'90'</span>, <span class="at" style="color: #657422;">size =</span> <span class="dv" style="color: #AD0000;">16</span>, <span class="at" style="color: #657422;">alpha =</span> <span class="fl" style="color: #AD0000;">0.40</span>, <span class="at" style="color: #657422;">color =</span> <span class="st" style="color: #20794D;">"#0033a0"</span>, <span class="at" style="color: #657422;">family =</span> <span class="st" style="color: #20794D;">"bold"</span>) <span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb1-43">  <span class="fu" style="color: #4758AB;">annotate</span>(<span class="st" style="color: #20794D;">"text"</span>, <span class="at" style="color: #657422;">x =</span> <span class="dv" style="color: #AD0000;">4</span>, <span class="at" style="color: #657422;">y =</span> <span class="dv" style="color: #AD0000;">20</span>, <span class="at" style="color: #657422;">label =</span> <span class="st" style="color: #20794D;">"Bachelet I"</span>, <span class="at" style="color: #657422;">angle =</span><span class="st" style="color: #20794D;">'90'</span>, <span class="at" style="color: #657422;">size =</span> <span class="dv" style="color: #AD0000;">16</span>, <span class="at" style="color: #657422;">alpha =</span> <span class="fl" style="color: #AD0000;">0.40</span>, <span class="at" style="color: #657422;">color =</span> <span class="st" style="color: #20794D;">"#0033a0"</span>, <span class="at" style="color: #657422;">family =</span> <span class="st" style="color: #20794D;">"bold"</span>) <span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb1-44">  <span class="fu" style="color: #4758AB;">annotate</span>(<span class="st" style="color: #20794D;">"text"</span>, <span class="at" style="color: #657422;">x =</span> <span class="dv" style="color: #AD0000;">5</span>, <span class="at" style="color: #657422;">y =</span> <span class="dv" style="color: #AD0000;">20</span>, <span class="at" style="color: #657422;">label =</span> <span class="st" style="color: #20794D;">"Piñera I"</span>, <span class="at" style="color: #657422;">angle =</span><span class="st" style="color: #20794D;">'90'</span>, <span class="at" style="color: #657422;">size =</span> <span class="dv" style="color: #AD0000;">16</span>, <span class="at" style="color: #657422;">alpha =</span> <span class="fl" style="color: #AD0000;">0.40</span>, <span class="at" style="color: #657422;">color =</span> <span class="st" style="color: #20794D;">"#0033a0"</span>, <span class="at" style="color: #657422;">family =</span> <span class="st" style="color: #20794D;">"bold"</span>) <span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb1-45">  <span class="fu" style="color: #4758AB;">annotate</span>(<span class="st" style="color: #20794D;">"text"</span>, <span class="at" style="color: #657422;">x =</span> <span class="dv" style="color: #AD0000;">6</span>, <span class="at" style="color: #657422;">y =</span> <span class="dv" style="color: #AD0000;">20</span>, <span class="at" style="color: #657422;">label =</span> <span class="st" style="color: #20794D;">"Bachelet II"</span>, <span class="at" style="color: #657422;">angle =</span><span class="st" style="color: #20794D;">'90'</span>, <span class="at" style="color: #657422;">size =</span> <span class="dv" style="color: #AD0000;">16</span>, <span class="at" style="color: #657422;">alpha =</span> <span class="fl" style="color: #AD0000;">0.40</span>, <span class="at" style="color: #657422;">color =</span> <span class="st" style="color: #20794D;">"#0033a0"</span>, <span class="at" style="color: #657422;">family =</span> <span class="st" style="color: #20794D;">"bold"</span>) <span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb1-46">  <span class="fu" style="color: #4758AB;">annotate</span>(<span class="st" style="color: #20794D;">"text"</span>, <span class="at" style="color: #657422;">x =</span> <span class="fl" style="color: #AD0000;">6.9</span>, <span class="at" style="color: #657422;">y =</span> <span class="dv" style="color: #AD0000;">20</span>, <span class="at" style="color: #657422;">label =</span> <span class="st" style="color: #20794D;">"Piñera II"</span>, <span class="at" style="color: #657422;">angle =</span><span class="st" style="color: #20794D;">'90'</span>, <span class="at" style="color: #657422;">size =</span> <span class="dv" style="color: #AD0000;">16</span>, <span class="at" style="color: #657422;">alpha =</span> <span class="fl" style="color: #AD0000;">0.40</span>, <span class="at" style="color: #657422;">color =</span> <span class="st" style="color: #20794D;">"#0033a0"</span>, <span class="at" style="color: #657422;">family =</span> <span class="st" style="color: #20794D;">"bold"</span>) <span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb1-47">  <span class="fu" style="color: #4758AB;">ylim</span>(<span class="sc" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">5</span>, <span class="dv" style="color: #AD0000;">100</span>) <span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb1-48">  <span class="fu" style="color: #4758AB;">coord_cartesian</span>(<span class="at" style="color: #657422;">expand=</span>T) <span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb1-49">  <span class="fu" style="color: #4758AB;">xlab</span>(<span class="st" style="color: #20794D;">""</span>) <span class="sc" style="color: #5E5E5E;">+</span> <span class="fu" style="color: #4758AB;">ylab</span>(<span class="st" style="color: #20794D;">"Presidents' Share of All Enacted Laws"</span>) <span class="sc" style="color: #5E5E5E;">+</span> </span>
+<span id="cb1-50">  <span class="fu" style="color: #4758AB;">labs</span>(<span class="at" style="color: #657422;">title =</span> <span class="st" style="color: #20794D;">"Do Presidents Dictate Most Policy-Making Activity in the Chilean Assembly?"</span>,</span>
+<span id="cb1-51">       <span class="at" style="color: #657422;">subtitle =</span> <span class="st" style="color: #20794D;">"Historically yes, but not recently..."</span>,</span>
+<span id="cb1-52">       <span class="at" style="color: #657422;">caption =</span> <span class="st" style="color: #20794D;">"Lucas Couto | Twitter: @lucas_coutoz | Data: Mimica and Navia (2024)"</span>) <span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb1-53">  <span class="fu" style="color: #4758AB;">theme</span>(</span>
+<span id="cb1-54">    <span class="co" style="color: #5E5E5E;">#Title, Subtitle, Caption</span></span>
+<span id="cb1-55">    <span class="at" style="color: #657422;">plot.title =</span> <span class="fu" style="color: #4758AB;">element_text</span>(<span class="at" style="color: #657422;">family =</span> <span class="st" style="color: #20794D;">"bold"</span>, <span class="at" style="color: #657422;">hjust =</span> <span class="fl" style="color: #AD0000;">0.5</span>, <span class="at" style="color: #657422;">vjust =</span> <span class="fl" style="color: #AD0000;">0.5</span>, <span class="at" style="color: #657422;">size =</span> <span class="dv" style="color: #AD0000;">45</span>, <span class="at" style="color: #657422;">color =</span> <span class="st" style="color: #20794D;">"black"</span>),</span>
+<span id="cb1-56">    <span class="at" style="color: #657422;">plot.title.position =</span> <span class="st" style="color: #20794D;">"plot"</span>,</span>
+<span id="cb1-57">    <span class="at" style="color: #657422;">plot.subtitle =</span> <span class="fu" style="color: #4758AB;">element_text</span>(<span class="at" style="color: #657422;">family=</span><span class="st" style="color: #20794D;">"regular"</span>, <span class="at" style="color: #657422;">size =</span> <span class="dv" style="color: #AD0000;">40</span>, <span class="at" style="color: #657422;">hjust =</span> <span class="fl" style="color: #AD0000;">0.5</span>, <span class="at" style="color: #657422;">color =</span> <span class="st" style="color: #20794D;">"black"</span>),</span>
+<span id="cb1-58">    <span class="at" style="color: #657422;">plot.caption =</span> <span class="fu" style="color: #4758AB;">element_text</span>(<span class="at" style="color: #657422;">family=</span><span class="st" style="color: #20794D;">"bold"</span>, <span class="at" style="color: #657422;">size =</span> <span class="dv" style="color: #AD0000;">30</span>, <span class="at" style="color: #657422;">color =</span> <span class="st" style="color: #20794D;">"black"</span>, <span class="at" style="color: #657422;">hjust =</span> <span class="dv" style="color: #AD0000;">1</span>),</span>
+<span id="cb1-59">    <span class="at" style="color: #657422;">plot.caption.position =</span> <span class="st" style="color: #20794D;">"plot"</span>,</span>
+<span id="cb1-60">    <span class="co" style="color: #5E5E5E;">#Panel and Background</span></span>
+<span id="cb1-61">    <span class="at" style="color: #657422;">panel.border =</span> <span class="fu" style="color: #4758AB;">element_blank</span>(),</span>
+<span id="cb1-62">    <span class="at" style="color: #657422;">panel.grid.major =</span> <span class="fu" style="color: #4758AB;">element_blank</span>(),</span>
+<span id="cb1-63">    <span class="at" style="color: #657422;">panel.grid.minor =</span> <span class="fu" style="color: #4758AB;">element_blank</span>(),</span>
+<span id="cb1-64">    <span class="at" style="color: #657422;">panel.background =</span> <span class="fu" style="color: #4758AB;">element_rect</span>(<span class="at" style="color: #657422;">fill =</span> <span class="st" style="color: #20794D;">"#d9d9d9"</span>),</span>
+<span id="cb1-65">    <span class="at" style="color: #657422;">plot.background =</span> <span class="fu" style="color: #4758AB;">element_rect</span>(<span class="at" style="color: #657422;">fill =</span> <span class="st" style="color: #20794D;">"#d9d9d9"</span>, <span class="at" style="color: #657422;">linetype =</span> <span class="st" style="color: #20794D;">'blank'</span>),</span>
+<span id="cb1-66">    <span class="co" style="color: #5E5E5E;">#Axes</span></span>
+<span id="cb1-67">    <span class="at" style="color: #657422;">axis.title =</span> <span class="fu" style="color: #4758AB;">element_text</span>(<span class="at" style="color: #657422;">size =</span> <span class="dv" style="color: #AD0000;">40</span>, <span class="at" style="color: #657422;">family =</span> <span class="st" style="color: #20794D;">"bold"</span>, <span class="at" style="color: #657422;">color =</span> <span class="st" style="color: #20794D;">"black"</span>),</span>
+<span id="cb1-68">    <span class="at" style="color: #657422;">axis.text.y =</span> <span class="fu" style="color: #4758AB;">element_text</span>(<span class="at" style="color: #657422;">size =</span> <span class="dv" style="color: #AD0000;">30</span>, <span class="at" style="color: #657422;">family =</span> <span class="st" style="color: #20794D;">"regular"</span>, <span class="at" style="color: #657422;">color =</span> <span class="st" style="color: #20794D;">"black"</span>),</span>
+<span id="cb1-69">    <span class="at" style="color: #657422;">axis.text.x =</span> <span class="fu" style="color: #4758AB;">element_text</span>(<span class="at" style="color: #657422;">size =</span> <span class="dv" style="color: #AD0000;">30</span>, <span class="at" style="color: #657422;">family =</span> <span class="st" style="color: #20794D;">"regular"</span>, <span class="at" style="color: #657422;">color =</span> <span class="st" style="color: #20794D;">"black"</span>),</span>
+<span id="cb1-70">    <span class="at" style="color: #657422;">axis.ticks =</span> <span class="fu" style="color: #4758AB;">element_blank</span>(),</span>
+<span id="cb1-71">    <span class="at" style="color: #657422;">axis.line =</span> <span class="fu" style="color: #4758AB;">element_blank</span>(),</span>
+<span id="cb1-72">    <span class="co" style="color: #5E5E5E;">#no legend</span></span>
+<span id="cb1-73">    <span class="at" style="color: #657422;">legend.position =</span> <span class="st" style="color: #20794D;">"none"</span>,</span>
+<span id="cb1-74">    <span class="at" style="color: #657422;">text =</span> <span class="fu" style="color: #4758AB;">element_text</span>(<span class="at" style="color: #657422;">size =</span> <span class="dv" style="color: #AD0000;">30</span>)) <span class="ot" style="color: #003B4F;">-&gt;</span> toranaga</span>
+<span id="cb1-75"></span>
+<span id="cb1-76"><span class="co" style="color: #5E5E5E;">#ggsave("chile_pres.png",</span></span>
+<span id="cb1-77"><span class="co" style="color: #5E5E5E;">#       plot=toranaga,</span></span>
+<span id="cb1-78"><span class="co" style="color: #5E5E5E;">#       device = agg_png(width = 8, height = 6, units = "in", res = 300))  </span></span></code></pre></div>
+</details>
+</div>
+
+
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>The data used for the DataViz below is the last row of Table 2 in <a href="https://journals.sagepub.com/doi/10.1177/1866802X241245727">Mimica and Navia (2024)</a>.↩︎</p></li>
+<li id="fn2"><p>Chile is one of the Latin American countries with the highest scores in presidential powers (prespow1) in <a href="https://www.cambridge.org/core/journals/british-journal-of-political-science/article/maximizing-the-reliability-of-crossnational-measures-of-presidential-power/42AC1EC79AB90EFB7BC7355D6B7ECDD4">Doyle and Elgie (2016)’s</a> measure.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>Chile</category>
+  <category>Data Visualization</category>
+  <category>Latin America</category>
+  <category>Presidentalism</category>
+  <guid>https://lucascoutoz.netlify.app/posts/e2024_5/hyper-chile.html</guid>
+  <pubDate>Mon, 27 May 2024 03:00:00 GMT</pubDate>
+  <media:content url="https://lucascoutoz.netlify.app/posts/e2024_5/chile_pres.png" medium="image" type="image/png" height="108" width="144"/>
+</item>
 <item>
   <title>New Zealand Parties Placement on a General right-left Dimension</title>
   <dc:creator>Lucas Couto</dc:creator>
@@ -699,11 +831,21 @@ font-style: italic;">##Plot----</span></span>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
+<p><img src="https://lucascoutoz.netlify.app/posts/DataViz/chile_pres.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Conversion of Bills into Laws in Chile: the increasingly appalling performance of Chilean presidents</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
 <p><img src="https://lucascoutoz.netlify.app/posts/DataViz/NZ.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Right-Left Placements of New Zealand Parties</figcaption><p></p>
 </figure>
 </div>
 </div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -712,8 +854,6 @@ font-style: italic;">##Plot----</span></span>
 </figure>
 </div>
 </div>
-</div>
-<div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -722,6 +862,8 @@ font-style: italic;">##Plot----</span></span>
 </figure>
 </div>
 </div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -730,8 +872,6 @@ font-style: italic;">##Plot----</span></span>
 </figure>
 </div>
 </div>
-</div>
-<div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -740,6 +880,8 @@ font-style: italic;">##Plot----</span></span>
 </figure>
 </div>
 </div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -748,11 +890,11 @@ font-style: italic;">##Plot----</span></span>
 </figure>
 </div>
 </div>
-</div>
-<div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <p><img src="https://lucascoutoz.netlify.app/posts/DataViz/presafrica.png" class="img-fluid" alt="Portfolio Allocation in Africa"> <img src="https://lucascoutoz.netlify.app/posts/DataViz/pinktax.png" class="img-fluid" alt="Pinx Tax in LA"></p>
 </div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -761,8 +903,6 @@ font-style: italic;">##Plot----</span></span>
 </figure>
 </div>
 </div>
-</div>
-<div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -786,8 +926,8 @@ No matching items
 </div>
 </div> ]]></description>
   <guid>https://lucascoutoz.netlify.app/posts/DataViz/DataViz Series.html</guid>
-  <pubDate>Wed, 24 Apr 2024 18:06:13 GMT</pubDate>
-  <media:content url="https://lucascoutoz.netlify.app/posts/DataViz/NZ.png" medium="image" type="image/png" height="108" width="144"/>
+  <pubDate>Mon, 27 May 2024 15:45:17 GMT</pubDate>
+  <media:content url="https://lucascoutoz.netlify.app/posts/DataViz/chile_pres.png" medium="image" type="image/png" height="108" width="144"/>
 </item>
 </channel>
 </rss>

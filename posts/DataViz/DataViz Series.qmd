@@ -13,6 +13,8 @@ title-block-banner: true
 ---
 ::: {layout-nrow=5}
 
+![Conversion of Bills into Laws in Chile: the increasingly appalling performance of Chilean presidents](chile_pres.png)
+
 ![Right-Left Placements of New Zealand Parties](NZ.png)
 
 ![The Ideology of Heads of Government in Latin America Over the Years](Ideology_LA.gif)

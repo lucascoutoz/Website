@@ -1,0 +1,123 @@
+---
+    title: 'Hyper-Presidentialism in Chile?'
+    date: '2024-05-27'
+    categories: ['Chile', 'Data Visualization', 'Latin America', 'Presidentalism']
+    description: 'In this post, we examine whether the executive calls the shots in the legislative process in Chile'
+    execute: 
+      message: false
+      warning: false
+    editor_options: 
+      chunk_output_type: console
+    format:
+      html:
+        code-fold: true
+        code-summary: "Show the code"
+        from: markdown+emoji
+---
+
+# Presidential Powers in Chile
+
+Historically, Chilean presidents have been considered so powerful that scholarly literature has constantly framed Chile as a 'hyper-presidential' system. However, this notion has recently been put into question. Some examples of this revisionist literature include [Martínez and Dockendorff (2023)](https://www.taylorfrancis.com/chapters/oa-edit/10.4324/9781003324249-4/hyper-presidentialism-question-christopher-mart%C3%ADnez-andr%C3%A9s-dockendorff?context=ubx&refId=11aab70f-9fd4-4faf-8813-98b1006afd1b) and [Mimica and Navia (2024)](https://journals.sagepub.com/doi/10.1177/1866802X241245727).
+
+This blog post uses data from Mimica and Navia to display their argument graphically. More specifically, I plot whether presidential bills represent the lion's share of the legislative output of the legislative process in Chile.[^1]
+
+[^1]: The data used for the DataViz below is the last row of Table 2 in [Mimica and Navia (2024)](https://journals.sagepub.com/doi/10.1177/1866802X241245727).
+
+The DataViz is not anything so fancy, just a line plot with a shaded area beneath it. I don't know why, but this sort of graph seems to have become popular lately, perhaps due to the fact that it is slightly more attractive than a *simple* line plot.
+
+# The Fall of Presidential Dominance?
+
+In summary, Mimica and Navia (2024) argue that Chile cannot be considered a hyper-presidentialist system anymore because presidents do not dominate the legislative process anymore, and this can be seen by the decreasing share of presidential bills over time (relative to bills initiated by legislators themselves) and the decreasing share of presidents' enacted laws in comparison to all enacted legislation. The plot below depicts this latter aspect.
+
+![Conversion of Bills into Laws in Chile: the increasingly appalling performance of Chilean presidents](chile_pres.png)
+
+As the visualisation shows, the presidential dominance over the legislative process has gone from very high (in Aylwin's term) to low (in Piñera II's term). Soon after the redemocratisation process, the president accounted for roughly 90% of all laws enacted. Thirty years into the future, the president accounted for only 36% of all bills that later became laws.
+
+Mimica and Navia (2024) argue that this has been the result of a series of constitutional and electoral reforms, as well as the late *estallido social*. Martínez and Dockendorff (2023) present other arguments to back their argument of why hyper-presidentialism is no longer a thing in Chilean politics. If you are interested, I strongly suggest you read both papers and the broad literature on presidentialism and the formal vested powers of presidents. To pique your interest, how can the contrast between the measures of presidential powers[^2] and the actual performance of presidents in the legislative arena not be interesting?
+
+[^2]: Chile is one of the Latin American countries with the highest scores in presidential powers (prespow1) in [Doyle and Elgie (2016)'s](https://www.cambridge.org/core/journals/british-journal-of-political-science/article/maximizing-the-reliability-of-crossnational-measures-of-presidential-power/42AC1EC79AB90EFB7BC7355D6B7ECDD4) measure.
+
+Well, this is it for this month. See you next month!
+
+### Code
+
+```{r ad}
+#Load packages
+library(ggrepel)
+library(ggtext)
+library(lubridate)
+library(ragg)
+library(showtext)
+library(tidyverse)
+
+#data from Mimica and Navia (2024)
+cl <- tribble(
+  ~period, ~pp_share, ~president,
+  "1990-1994", 88.8, "Aylwin", 
+  "1994-2000", 69.4, "Frei",
+  "2000-2006", 64.5, "Lagos",
+  "2006-2010", 61.0, "Bachelet I", 
+  "2010-2014", 62.7, "Piñera I",
+  "2014-2018", 52.2, "Bachelet II",
+  "2018-2022", 36.3, "Piñera II"
+)
+
+#prep
+cl1 <- cl %>%
+  mutate(period = factor(period, levels = c("1990-1994", "1994-2000", "2000-2006",
+                                            "2006-2010", "2010-2014", "2014-2018",  
+                                            "2018-2022"))) %>%
+  mutate(pp_share_label = paste0(pp_share, "%"))
+
+
+#font
+font_add(family = "regular", "Outfit-Regular.ttf")
+font_add(family = "bold", "Outfit-Bold.ttf")
+showtext_auto() 
+
+#plot
+cl1 %>% ggplot(aes(period, pp_share, group = 1, label = pp_share_label)) +
+  geom_area(fill = "#0033a0", alpha = 0.2) +
+  geom_line(colour = "#0033a0") +
+  geom_point(colour = "#0033a0") +
+  geom_text_repel(colour = "#0033a0", xlim = c(-Inf, Inf), ylim = c(-Inf, Inf), nudge_y = 5, min.segment.length = Inf, family = "regular", size = 12) +
+  annotate("text", x = 1.1, y = 20, label = "Aylwin", angle ='90', size = 16, alpha = 0.40, color = "#0033a0", family = "bold") +
+  annotate("text", x = 2, y = 20, label = "Frei", angle ='90', size = 16, alpha = 0.40, color = "#0033a0", family = "bold") +
+  annotate("text", x = 3, y = 20, label = "Lagos", angle ='90', size = 16, alpha = 0.40, color = "#0033a0", family = "bold") +
+  annotate("text", x = 4, y = 20, label = "Bachelet I", angle ='90', size = 16, alpha = 0.40, color = "#0033a0", family = "bold") +
+  annotate("text", x = 5, y = 20, label = "Piñera I", angle ='90', size = 16, alpha = 0.40, color = "#0033a0", family = "bold") +
+  annotate("text", x = 6, y = 20, label = "Bachelet II", angle ='90', size = 16, alpha = 0.40, color = "#0033a0", family = "bold") +
+  annotate("text", x = 6.9, y = 20, label = "Piñera II", angle ='90', size = 16, alpha = 0.40, color = "#0033a0", family = "bold") +
+  ylim(-5, 100) +
+  coord_cartesian(expand=T) +
+  xlab("") + ylab("Presidents' Share of All Enacted Laws") + 
+  labs(title = "Do Presidents Dictate Most Policy-Making Activity in the Chilean Assembly?",
+       subtitle = "Historically yes, but not recently...",
+       caption = "Lucas Couto | Twitter: @lucas_coutoz | Data: Mimica and Navia (2024)") +
+  theme(
+    #Title, Subtitle, Caption
+    plot.title = element_text(family = "bold", hjust = 0.5, vjust = 0.5, size = 45, color = "black"),
+    plot.title.position = "plot",
+    plot.subtitle = element_text(family="regular", size = 40, hjust = 0.5, color = "black"),
+    plot.caption = element_text(family="bold", size = 30, color = "black", hjust = 1),
+    plot.caption.position = "plot",
+    #Panel and Background
+    panel.border = element_blank(),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.background = element_rect(fill = "#d9d9d9"),
+    plot.background = element_rect(fill = "#d9d9d9", linetype = 'blank'),
+    #Axes
+    axis.title = element_text(size = 40, family = "bold", color = "black"),
+    axis.text.y = element_text(size = 30, family = "regular", color = "black"),
+    axis.text.x = element_text(size = 30, family = "regular", color = "black"),
+    axis.ticks = element_blank(),
+    axis.line = element_blank(),
+    #no legend
+    legend.position = "none",
+    text = element_text(size = 30)) -> toranaga
+
+#ggsave("chile_pres.png",
+#       plot=toranaga,
+#       device = agg_png(width = 8, height = 6, units = "in", res = 300))  
+```
