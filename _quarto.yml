@@ -11,6 +11,8 @@ website:
         href: blog.qmd 
       - text: CV
         href: "cv/index.qmd"
+      - text: "DataViz"
+        file: posts/DataViz/DataViz Series.qmd  
       - text: "Research"
         file: research/index.qmd
       - icon: twitter

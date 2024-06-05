@@ -17,6 +17,6 @@ pub-info:
     <strong>L. Couto</strong>. "Government Formation in Presidentialism: disentangling the combined effects of pre-electoral coalitions and legislative polarisation."
   links:
     - name: PDF
-      url: Manuscript.pdf
+      url: couto2024.pdf
       #local: true
 ---
