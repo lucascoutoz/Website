@@ -143,7 +143,7 @@ frier %>% arrange(year) %>%
 
 
 #The code below will create a folder with several figures in a png format. Combine them in specific sites to transform them into an animated map in GIF!
-#animate(p, width=1050, height=750, duration=15, end_pause=5, rrenderer=file_renderer(dir="anim_img/"))
+#animate(p, width=1050, height=750, duration=15, end_pause=5, renderer=file_renderer(dir="anim_img/"))
 
 ```
 

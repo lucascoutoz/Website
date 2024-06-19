@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lucascoutoz.netlify.app/archive.html</loc>
-    <lastmod>2024-05-27T15:43:15.337Z</lastmod>
+    <lastmod>2024-06-19T21:19:19.532Z</lastmod>
   </url>
   <url>
     <loc>https://lucascoutoz.netlify.app/blog.html</loc>
-    <lastmod>2024-05-27T15:45:17.581Z</lastmod>
+    <lastmod>2024-06-19T21:19:22.279Z</lastmod>
   </url>
   <url>
     <loc>https://lucascoutoz.netlify.app/cv/index.html</loc>
-    <lastmod>2024-06-05T14:13:54.674Z</lastmod>
+    <lastmod>2024-06-19T21:16:35.204Z</lastmod>
   </url>
   <url>
     <loc>https://lucascoutoz.netlify.app/index.html</loc>
-    <lastmod>2024-06-05T14:12:01.690Z</lastmod>
+    <lastmod>2024-06-19T17:37:36.991Z</lastmod>
   </url>
   <url>
     <loc>https://lucascoutoz.netlify.app/posts/DataViz/DataViz Series.html</loc>
-    <lastmod>2024-06-05T14:12:32.219Z</lastmod>
+    <lastmod>2024-06-19T21:19:34.191Z</lastmod>
   </url>
   <url>
     <loc>https://lucascoutoz.netlify.app/posts/new_blog_post/post.html</loc>
@@ -98,7 +98,7 @@
   </url>
   <url>
     <loc>https://lucascoutoz.netlify.app/posts/c2024_3/ideology-head-of-gov.html</loc>
-    <lastmod>2024-04-22T23:50:33.777Z</lastmod>
+    <lastmod>2024-06-19T20:55:55.849Z</lastmod>
   </url>
   <url>
     <loc>https://lucascoutoz.netlify.app/research/working_papers/couto_dr/index.html</loc>
@@ -106,10 +106,14 @@
   </url>
   <url>
     <loc>https://lucascoutoz.netlify.app/posts/d2024_4/nz-parties.html</loc>
-    <lastmod>2024-05-27T14:06:14.240Z</lastmod>
+    <lastmod>2024-06-19T17:53:55.346Z</lastmod>
   </url>
   <url>
     <loc>https://lucascoutoz.netlify.app/posts/e2024_5/hyper-chile.html</loc>
     <lastmod>2024-05-27T15:44:55.363Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lucascoutoz.netlify.app/posts/f2024_6/brazil-left.html</loc>
+    <lastmod>2024-06-19T21:12:02.833Z</lastmod>
   </url>
 </urlset>

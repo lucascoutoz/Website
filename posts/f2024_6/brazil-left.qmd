@@ -1,0 +1,113 @@
+---
+    title: 'Spatially Locating Left-of-Centre Parties in Brazil'
+    date: '2024-06-20'
+    categories: ['Brazil', 'Data Visualization', 'Ideology', 'Latin America']
+    description: 'In this post, we analyse the ideological movements of Brazilian leftist parties over the years'
+    execute: 
+      message: false
+      warning: false
+    editor_options: 
+      chunk_output_type: console
+    format:
+      html:
+        code-fold: true
+        code-summary: "Show the code"
+        from: markdown+emoji
+---
+
+# This Month's Visualisation
+
+This month has been terribly hectic, to say the least. We've seen [Modi lose his parliamentary majority in India](https://www.ft.com/content/f03ee739-052e-41b0-9252-e8cc2a42af1c), [the ANC equally lose its majority in South Africa](https://goodauthority.org/news/south-africa-2024-election-anc-ramaphosa-zuma-unity-government/), [Sheinbaum crowned as Mexico's next president, and Morena getting close to a supermajority in both legislative chambers](https://americasquarterly.org/article/how-claudia-sheinbaum-will-be-different-from-amlo/). As if that weren't enough, the European Parliament elections have just taken place, and we've just had the kickoff to the Euro while awaiting the beginning of the Copa América. So, it's safe to say that I had plenty of topics to choose from for my visualisation this month.
+
+Despite all this, I opted to make a visualisation related to the ideological positions of Brazilian left-of-centre parties. The reason for doing so is basically that a sentence in [Zucco and Power (2024)](https://www.cambridge.org/core/journals/latin-american-politics-and-society/article/ideology-of-brazilian-parties-and-presidents-a-research-note-on-coalitional-presidentialism-under-stress/FAF5489B3E01D39A16DBB4971458AD48) caught my attention. On page 180, the authors highlight that "*\[l\]eft-wing parties have slowed and sometimes reversed their migration toward the center \[in Brazil's tumultuous recent period of impeachment, populism, and polarization\]*". So let's plot these movements based on parties' policy positions along a unidimensional scale of left-right provided by the legislators themselves!
+
+::: callout-note
+## Data
+
+To do so, I will be using the **Brazilian Legislative Survey (BLS)**. The BLS is an elite survey administered in every legislative term since the return to democracy. The data can be accessed [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WM9IZ8).
+:::
+
+# The Ideological Positions of Brazilian Leftist Parties
+
+To do so, I could have simply emulated [my DataVis on New Zealand parties](https://lucascoutoz.netlify.app/posts/d2024_4/nz-parties), but that certainty would not be as fun as making a new visualisation. Instead of a static graph, I then decided to make an animated lineplot!
+
+The animation below depicts the ideological movements of Brazilian left-of-centre parties over the years since the redemocratisation.
+
+![The Ideological Motion of Brazilian Leftist Parties Across Time](BRA_LEFT.gif)
+
+The figure brings several interesting points to our attention. To begin with, as is well documented by the scholarly literature, the [ **Workers' Party (PT, *Partido dos Trabalhadores*)**]{style="color:#c7132e"} glaringly moved in the direction of the centre upon taking office. This more centrist version of the party only changed in the last two waves of the Brazilian Legislative Survey. Not coincidentally, these were times marked by Rousseff's failed presidency in 2016 and Bolsonaro government in 2021. Thus, the question is whether the PT will continue its movement toward the left of the spectrum (or at least stabilise where it is) or return to the centre upon assuming the presidency again. My two cents are that this movement will depend on which grounds legislators will evaluate the PT's policy positions. As [Meyer and Wagner (2020)](https://journals.sagepub.com/doi/full/10.1177/1354068818806679) well demonstrate, the left-right dimension is actually an overarching dimension, encompassing both dimensions related to socioeconomic and cultural issues. Thus, if legislators put more emphasis on the PT's stance on socioeconomic matters, then it is pretty plausible that the PT will have point estimates more toward the centre. Contrariwise, if the weight is on the PT's stance on the cultural dimension, the opposite should be expected: the PT stabilising or even going down toward the left.
+
+Another noteworthy aspect of the graph is the <span style='color:#fece00'>**Brazilian Socialist Party (PSB, *Partido Socialista Brasileiro*)'s**</span> uptick in 2017 in the direction to the centre of the ideological space. This most likely is due to the party's participation in the Temer government, a right-of-centre government responsible for the downfall of former president Rousseff from the PT. Well, the PSB held the Ministry of Mines and Energy in that government. It would be quite interesting to probe whether voters' perceptions of the PSB also shifted towards the right after the party's involvement in the Temer government.
+
+Lastly, it is interesting to note that the confidence intervals for the [**Communist Party of Brazil (PCdoB, *Partido Comunista do Brasil*)**]{style="color:#e77772"} exploded in the last wave. To be honest, I don't have any immediate explanation for this. I initially thought that it might result from the party's small seat share in the Chamber of Deputies, but it actually managed to have a stable, though small, legislative presence from 2014 to 2018. Well, I'm not very optimistic about the *normalisation* of the confidence intervals for the PCdoB's policy positions, but let's see what happens in the next wave of the BLS!
+
+I've a few qualms about some aspects of the above visualisation, such as the hyphen superimposed over the acronym PCdoB and possibly some issues with font size, but this is what it is. See you next month with a new visualisation :blush:
+
+### Code
+
+```{r ad}
+##before you proceed, you should download the 9th wave of the BLS
+
+#Load packages
+library(ggtext)
+library(gridtext)
+library(gganimate)
+library(showtext)
+library(tidyverse)
+
+load("bls9_estimates_partiespresidents_long.RData")
+bra_left <- long.table %>%
+            filter(party.or.pres %in% c("PT", "PCDOB", "PSB", "PDT", "PSOL"))
+
+parties <- c("PSOL" = "#70048c",
+             "PCDOB" ="#e77772",
+             "PT" =  "#c7132e",
+             "PSB" = "#fece00",
+             "PDT" = "#243e7b")
+
+#font
+font_add(family = "regular", "Outfit-Regular.ttf")
+font_add(family = "bold", "Outfit-Bold.ttf")
+showtext_auto() 
+
+
+bra_left %>% ggplot(aes(year, ideo, group = party.or.pres, fill = party.or.pres, colour = party.or.pres)) +
+  geom_line(stat = "identity", linewidth = 1) +
+  geom_ribbon(aes(ymin = ideo - ideo.se, ymax = ideo + ideo.se, fill = party.or.pres, colour = party.or.pres), alpha = 0.6) +
+  scale_colour_manual(values = parties) +
+  scale_fill_manual(values = parties) +
+  scale_x_continuous(limits = c(1990, 2022),
+                    breaks = c(1990, 1993, 1997, 2001, 2005, 2009, 2013, 2017, 2021)) +
+  scale_y_continuous(limits = c(-1.1, 1)) +
+  coord_cartesian(expand=FALSE) +
+  xlab("") + ylab("Left-Right Ideological Space") +
+  labs(title = "The Ideological Positions of Left-Wing Parties in Brazil",
+       subtitle = "<span style='color:#243e7b'> PDT </span> -- <span style='color:#cba500'> PSB </span> -- <span style='color:#c7132e'> PT </span> --  <span style='color:#e77772'>   PCdoB                </span>       --   <span style='color:#70048c'> PSOL </span>",
+       caption = "Lucas Couto | Twitter: @lucas_coutoz | Data: Zucco and Power (2024)") +
+  transition_reveal(year) +
+  theme(
+    #Title, Subtitle, Caption
+    plot.title = element_text(family = "bold", hjust = 0.5, vjust = 0.5, size = 30, color = "black"),
+    plot.subtitle = element_markdown(family = "regular", hjust = 0.5, size = 25, color = "black"),
+    plot.title.position = "plot",
+    plot.caption = element_text(family = "bold", size = 15, color = "black", hjust = 1),
+    plot.caption.position = "plot",
+    #Panel and Background
+    panel.border = element_blank(),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.background = element_rect(fill = "#d9d9d9"),
+    plot.background = element_rect(fill = "#d9d9d9", linetype = 'blank'),
+    #Axes
+    axis.title = element_text(size = 22, family = "bold", color = "black"),
+    axis.text.y = element_text(size = 18, family = "regular", color = "black"),
+    axis.text.x = element_text(size = 18, family = "regular", color = "black"),
+    axis.ticks = element_blank(),
+    axis.line = element_blank(),
+    #no legend
+    legend.position = "none") -> save_
+
+#animate(save_, width=1200, height=800, duration=15, end_pause=5, renderer=file_renderer(dir="anim_img/"))
+
+
+```

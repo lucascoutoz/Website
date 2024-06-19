@@ -11,7 +11,9 @@ listing:
 page-layout: full
 title-block-banner: true
 ---
-::: {layout-nrow=5}
+::: {layout-nrow=6}
+
+![The Ideological Motion of Brazilian Leftist Parties Across Time](BRA_LEFT.gif)
 
 ![Conversion of Bills into Laws in Chile: the increasingly appalling performance of Chilean presidents](chile_pres.png)
 
