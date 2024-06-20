@@ -33,7 +33,7 @@ Data
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>To do so, I will be using the <strong>Brazilian Legislative Survey (BLS)</strong>. The BLS is an elite survey administered in every legislative term since the return to democracy. The data can be accessed <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WM9IZ8">here</a>.</p>
+<p>To do so, I will be using the <strong>Brazilian Legislative Survey (BLS)</strong>. The BLS is an elite survey administered in every legislative term since the return to democracy. The data can be accessed <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WM9IZ8">here</a>. Below, I actually use the data from Zucco and Power’s (2024) replication materials. But, in the end, they are essentially the same data.</p>
 </div>
 </div>
 </section>
@@ -1060,7 +1060,7 @@ No matching items
 </div>
 </div> ]]></description>
   <guid>https://lucascoutoz.netlify.app/posts/DataViz/DataViz Series.html</guid>
-  <pubDate>Wed, 19 Jun 2024 21:19:22 GMT</pubDate>
+  <pubDate>Thu, 20 Jun 2024 02:00:54 GMT</pubDate>
   <media:content url="https://lucascoutoz.netlify.app/posts/DataViz/BRA_LEFT.gif" medium="image" type="image/gif"/>
 </item>
 </channel>

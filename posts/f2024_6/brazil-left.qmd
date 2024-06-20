@@ -24,7 +24,7 @@ Despite all this, I opted to make a visualisation related to the ideological pos
 ::: callout-note
 ## Data
 
-To do so, I will be using the **Brazilian Legislative Survey (BLS)**. The BLS is an elite survey administered in every legislative term since the return to democracy. The data can be accessed [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WM9IZ8).
+To do so, I will be using the **Brazilian Legislative Survey (BLS)**. The BLS is an elite survey administered in every legislative term since the return to democracy. The data can be accessed [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WM9IZ8). Below, I actually use the data from Zucco and Power's (2024) replication materials. But, in the end, they are essentially the same data.
 :::
 
 # The Ideological Positions of Brazilian Leftist Parties
