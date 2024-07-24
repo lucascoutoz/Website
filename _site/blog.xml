@@ -27,7 +27,7 @@
 </section>
 <section id="regional-authority-index-rai" class="level1">
 <h1>Regional Authority Index (RAI)</h1>
-<p>So, what is the Regional Authority Index (RAI)? In a few words, the RAI is a measure that captures to what extent power (or authority) is shared and exercised by regional governments in each country. The centrepiece of the RAI is dividing the concept of authority into two dimensions: <strong>self-rule</strong> and <strong>shared rule</strong>. The former tells us the degree to which each regional government can exercise power within ints bounds, whereas the latter tells us whether and to what extent regional governments have a say on national matters.</p>
+<p>So, what is the Regional Authority Index (RAI)? In a few words, the RAI is a measure that captures to what extent power (or authority) is shared and exercised by regional governments in each country. The centrepiece of the RAI is dividing the concept of authority into two dimensions: <strong>self-rule</strong> and <strong>shared rule</strong>. The former tells us the degree to which each regional government can exercise power within its bounds, whereas the latter tells us whether and to what extent regional governments have a say on national matters.</p>
 <p>In summary, RAI provides us with the tools to examine power-sharing in multi-level systems. Below, my main concern is to inspect whether East Asian countries concentrate power on the national government or whether it is reasonably shared among subnational entities. Before proceeding, it is worth pointing out that each dimension (self-rule and shared rule) is formed by five constituent parts, and you can read more about each in <a href="https://www.routledge.com/The-Rise-of-Regional-Authority-A-Comparative-Study-of-42-Democracies/Hooghe-Marks-Schakel/p/book/9780415577762">Hooghe et al.&nbsp;(2010)</a>, <a href="https://garymarks.web.unc.edu/wp-content/uploads/sites/13018/2021/03/Hooghe_Marks_Schakel_Niedzwiecki_Osterkatz_Shairrosenfield_Measuring-regional-authority_2016.pdf">Hooghe et al.&nbsp;(2016)</a>, and <a href="https://garymarks.web.unc.edu/wp-content/uploads/sites/13018/2021/03/2021_Shair-Rosenfield-et-al._Language-difference-and-regional-authority-1.pdf">Shair-Rosenfield et al.&nbsp;(2021)</a>.</p>
 </section>
 <section id="a-choropleth-map" class="level1">
@@ -5718,7 +5718,7 @@ No matching items
 </div>
 </div> ]]></description>
   <guid>https://lucascoutoz.netlify.app/posts/DataViz/DataViz Series.html</guid>
-  <pubDate>Wed, 24 Jul 2024 01:11:01 GMT</pubDate>
+  <pubDate>Wed, 24 Jul 2024 19:55:14 GMT</pubDate>
 </item>
 </channel>
 </rss>
