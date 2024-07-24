@@ -43,7 +43,7 @@ Several tutorials on the internet provide the steps to make choropleth maps (e.g
 
 The figure above generates interesting insights, but before let's see how to interpret the map first. The most important aspect is that the legend (the 2x2 square) serves as our compass to navigate the map. As can be seen, **Self-Rule** is on the x-axis, and **Shared Rule** is on the y-axis. [**The grey square**]{style="color:#949494"} indicates countries where regional governments have neither significant scores on self-rule, nor on shared rule. In other words, countries whose national governments stack the cards all in their favour. Next, [**the steel blue**]{style="color:#488fb0"} represents countries where regional governments have enough authority to exert influence within their borders, but not enough to have a say on national matters. Contrariwise, [**the orange, corn-ish colour**]{style="color:#dea301"} indicates the opposite: regional governments with influence on national policies, but not so much on their own territory. Lastly, [**the green**]{style="color:#4c6e01"} indicates countries where regional governments are important in both dimensions.
 
-Overall, regional governments have a limited scope of influence in the region. First, the figure shows us several countries in grey (Brunei, Cambodia, East Timor, Laos, Mongolia, Singapore, Thailand, and Vietnam). Although other countries grant regional governments substantial authority in what concerns the territories' own governance, they nonetheless lack the power to influence national politics more broadly (e.g., China, Indonesia, Japan, South Korea, the Philippines, Taiwan). The opposite is encountered in one country: Myanmar. To conclude, only a single country sufficiently scores on the two dimensions to grant considerable autonomy to regional governments, which is Malaysia. Even still, Malaysia (self-rule: 13.99 and shared rule: 7.48) is very distant from the scores of some Western democracies, such as Belgium (self-rule: 22.39 and shared rule: 11.47) and Germany (self-rule: 25.67 and shared rule: 12).
+Overall, regional governments have a limited scope of influence in the region. First, the figure shows us several countries in grey (Brunei, Cambodia, East Timor, Laos, Mongolia, Singapore, and Thailand). Although other countries grant regional governments substantial authority in what concerns the territories' own governance, they nonetheless lack the power to influence national politics more broadly (e.g., China, Indonesia, Japan, South Korea, the Philippines, Taiwan, and Vietnam). The opposite is not even found in the chart. To conclude, only two countries sufficiently scores on the two dimensions to grant considerable autonomy to regional governments: Myanmar and Malaysia. Even still, both Myanmar (self-rule: 7.99 and shared rule: 4.89) and Malaysia (self-rule: 13.99 and shared rule: 7.48) are very distant from the scores of some Western democracies, such as Belgium (self-rule: 22.39 and shared rule: 11.47) and Germany (self-rule: 25.67 and shared rule: 12).
 
 By the way, we don't have values for North Korea and, for this reason, the country is in dark grey:pensive:
 
@@ -180,9 +180,9 @@ map_legend <- ggdraw() +
               draw_plot(save, 0, 0, 1, 1) +
               draw_plot(egend, 0.65, 0.4, 0.2, 0.2, scale = 1)
 
-ggsave("east_asia.png",
-       plot = map_legend,
-       device = agg_png(width = 8, height = 6, units = "in", res = 300)) 
+#ggsave("east_asia.png",
+#       plot = map_legend,
+#       device = agg_png(width = 8, height = 6, units = "in", res = 300)) 
 
 
 ```

@@ -44,7 +44,7 @@
 </figure>
 </div>
 <p>The figure above generates interesting insights, but before let’s see how to interpret the map first. The most important aspect is that the legend (the 2x2 square) serves as our compass to navigate the map. As can be seen, <strong>Self-Rule</strong> is on the x-axis, and <strong>Shared Rule</strong> is on the y-axis. <span style="color:#949494"><strong>The grey square</strong></span> indicates countries where regional governments have neither significant scores on self-rule, nor on shared rule. In other words, countries whose national governments stack the cards all in their favour. Next, <span style="color:#488fb0"><strong>the steel blue</strong></span> represents countries where regional governments have enough authority to exert influence within their borders, but not enough to have a say on national matters. Contrariwise, <span style="color:#dea301"><strong>the orange, corn-ish colour</strong></span> indicates the opposite: regional governments with influence on national policies, but not so much on their own territory. Lastly, <span style="color:#4c6e01"><strong>the green</strong></span> indicates countries where regional governments are important in both dimensions.</p>
-<p>Overall, regional governments have a limited scope of influence in the region. First, the figure shows us several countries in grey (Brunei, Cambodia, East Timor, Laos, Mongolia, Singapore, Thailand, and Vietnam). Although other countries grant regional governments substantial authority in what concerns the territories’ own governance, they nonetheless lack the power to influence national politics more broadly (e.g., China, Indonesia, Japan, South Korea, the Philippines, Taiwan). The opposite is encountered in one country: Myanmar. To conclude, only a single country sufficiently scores on the two dimensions to grant considerable autonomy to regional governments, which is Malaysia. Even still, Malaysia (self-rule: 13.99 and shared rule: 7.48) is very distant from the scores of some Western democracies, such as Belgium (self-rule: 22.39 and shared rule: 11.47) and Germany (self-rule: 25.67 and shared rule: 12).</p>
+<p>Overall, regional governments have a limited scope of influence in the region. First, the figure shows us several countries in grey (Brunei, Cambodia, East Timor, Laos, Mongolia, Singapore, and Thailand). Although other countries grant regional governments substantial authority in what concerns the territories’ own governance, they nonetheless lack the power to influence national politics more broadly (e.g., China, Indonesia, Japan, South Korea, the Philippines, Taiwan, and Vietnam). The opposite is not even found in the chart. To conclude, only two countries sufficiently scores on the two dimensions to grant considerable autonomy to regional governments: Myanmar and Malaysia. Even still, both Myanmar (self-rule: 7.99 and shared rule: 4.89) and Malaysia (self-rule: 13.99 and shared rule: 7.48) are very distant from the scores of some Western democracies, such as Belgium (self-rule: 22.39 and shared rule: 11.47) and Germany (self-rule: 25.67 and shared rule: 12).</p>
 <p>By the way, we don’t have values for North Korea and, for this reason, the country is in dark grey<span class="emoji" data-emoji="pensive">😔</span></p>
 <p>That’s it for this month. See you shortly with a thematic plot for August!!</p>
 <section id="code" class="level3">
@@ -846,35 +846,15 @@ font-style: inherit;">scale =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span>)</span>
 <span id="cb1-128"></span>
-<span id="cb1-129"><span class="fu" style="color: #4758AB;
+<span id="cb1-129"><span class="co" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">ggsave</span>(<span class="st" style="color: #20794D;
+font-style: inherit;">#ggsave("east_asia.png",</span></span>
+<span id="cb1-130"><span class="co" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">"east_asia.png"</span>,</span>
-<span id="cb1-130">       <span class="at" style="color: #657422;
+font-style: inherit;">#       plot = map_legend,</span></span>
+<span id="cb1-131"><span class="co" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">plot =</span> map_legend,</span>
-<span id="cb1-131">       <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">device =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">agg_png</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">width =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">8</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">height =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">6</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">units =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"in"</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">res =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">300</span>)) </span></code></pre></div>
+font-style: inherit;">#       device = agg_png(width = 8, height = 6, units = "in", res = 300)) </span></span></code></pre></div>
 </details>
 </div>
 
@@ -5738,7 +5718,7 @@ No matching items
 </div>
 </div> ]]></description>
   <guid>https://lucascoutoz.netlify.app/posts/DataViz/DataViz Series.html</guid>
-  <pubDate>Wed, 24 Jul 2024 00:55:00 GMT</pubDate>
+  <pubDate>Wed, 24 Jul 2024 01:11:01 GMT</pubDate>
 </item>
 </channel>
 </rss>
