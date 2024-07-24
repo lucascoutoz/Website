@@ -13,6 +13,9 @@ title-block-banner: true
 ---
 ::: {layout-nrow=6}
 
+![The Authority of Regional Governments in East Asia](east_asia.png)
+
+
 ![The Ideological Motion of Brazilian Leftist Parties Across Time](BRA_LEFT.gif)
 
 ![Conversion of Bills into Laws in Chile: the increasingly appalling performance of Chilean presidents](chile_pres.png)
