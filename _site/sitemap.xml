@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lucascoutoz.netlify.app/archive.html</loc>
-    <lastmod>2024-07-24T19:55:11.956Z</lastmod>
+    <lastmod>2024-08-26T09:37:43.636Z</lastmod>
   </url>
   <url>
     <loc>https://lucascoutoz.netlify.app/blog.html</loc>
-    <lastmod>2024-07-24T19:55:14.562Z</lastmod>
+    <lastmod>2024-08-26T09:37:44.992Z</lastmod>
   </url>
   <url>
     <loc>https://lucascoutoz.netlify.app/cv/index.html</loc>
@@ -14,11 +14,11 @@
   </url>
   <url>
     <loc>https://lucascoutoz.netlify.app/index.html</loc>
-    <lastmod>2024-07-24T01:06:08.758Z</lastmod>
+    <lastmod>2024-08-26T09:35:46.703Z</lastmod>
   </url>
   <url>
     <loc>https://lucascoutoz.netlify.app/posts/DataViz/DataViz Series.html</loc>
-    <lastmod>2024-07-24T01:11:17.572Z</lastmod>
+    <lastmod>2024-08-26T09:35:56.147Z</lastmod>
   </url>
   <url>
     <loc>https://lucascoutoz.netlify.app/posts/new_blog_post/post.html</loc>
@@ -54,7 +54,7 @@
   </url>
   <url>
     <loc>https://lucascoutoz.netlify.app/research/index.html</loc>
-    <lastmod>2024-06-20T02:00:40.694Z</lastmod>
+    <lastmod>2024-08-26T09:35:53.813Z</lastmod>
   </url>
   <url>
     <loc>https://lucascoutoz.netlify.app/research/working_papers/couto_diss/index.html</loc>
@@ -119,5 +119,9 @@
   <url>
     <loc>https://lucascoutoz.netlify.app/posts/g2024_7/rai_east_asia.html</loc>
     <lastmod>2024-07-24T19:55:24.505Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lucascoutoz.netlify.app/posts/h2024_8/dk_immi.html</loc>
+    <lastmod>2024-08-26T09:37:48.385Z</lastmod>
   </url>
 </urlset>
