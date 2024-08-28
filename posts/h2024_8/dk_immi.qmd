@@ -1,6 +1,6 @@
 ---
     title: 'A Fresh Start in Aarhus!'
-    date: '2024-08-28'
+    date: '2024-08-30'
     categories: ['Aarhus', 'Denmark', 'Personal']
     description: 'In September, I will begin as a PhD Student at the Department of Political Science at Aarhus University!'
     execute: 
