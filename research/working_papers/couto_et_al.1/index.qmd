@@ -23,10 +23,10 @@ categories:
 
 pub-info:
   reference: >-
-   <strong>L. Couto</strong>, <a href="http://lattes.cnpq.br/5139407303038024"> A. V. Lopes</a>, <a href="http://www.pesquisar.unb.br/professor/adrian-nicolas-albala-young/"> A. Albala</a>, and V. Paley. "Party Switching in Elected Upper Chambers: The case of the Brazilian Senate."
+   <strong>L. Couto</strong>, <a href="http://lattes.cnpq.br/5139407303038024"> A. V. Lopes</a>, <a href="http://www.pesquisar.unb.br/professor/adrian-nicolas-albala-young/"> A. Albala</a>, and V. Paley. "Party Switching in Elected Upper Chambers: The Case of the Brazilian Senate."
   links:
     - name: PDF
-      url: Manuscript_PS.pdf
+      url: couto_et_al2024.pdf
       icon: fa-solid fa-file-pdf
 #doi: 10.1177/13691481211056852
 toc: true
