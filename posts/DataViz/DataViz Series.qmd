@@ -11,7 +11,9 @@ listing:
 page-layout: full
 title-block-banner: true
 ---
-::: {layout-nrow=6}
+::: {layout-nrow=8}
+![Trust in Parties in Latin America](latin_baro.png)
+
 
 ![The Authority of Regional Governments in East Asia](east_asia.png)
 
