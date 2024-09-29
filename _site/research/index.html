@@ -70,9 +70,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-include-back-link','listing-title','listing-date','listing-author','listing-categories','listing-pub-info','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-doi','listing-toc',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-date-format','listing-toc','listing-toc-title','listing-toc-location','listing-execute','listing-include-back-link','listing-title','listing-date','listing-author','listing-categories','listing-pub-info','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-doi',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-include-back-link","listing-title","listing-date","listing-author","listing-categories","listing-pub-info","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-doi","listing-toc"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-date-format","listing-toc","listing-toc-title","listing-toc-location","listing-execute","listing-include-back-link","listing-title","listing-date","listing-author","listing-categories","listing-pub-info","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-doi"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -98,9 +98,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-include-back-link','listing-title','listing-date','listing-author','listing-categories','listing-pub-info','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-date-format','listing-toc','listing-toc-title','listing-toc-location','listing-execute','listing-include-back-link','listing-title','listing-date','listing-author','listing-categories','listing-pub-info','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-include-back-link","listing-title","listing-date","listing-author","listing-categories","listing-pub-info","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-date-format","listing-toc","listing-toc-title","listing-toc-location","listing-execute","listing-include-back-link","listing-title","listing-date","listing-author","listing-categories","listing-pub-info","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -126,9 +126,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-include-back-link','listing-title','listing-date','listing-author','listing-categories','listing-pub-info','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-toc',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-date-format','listing-toc','listing-toc-title','listing-toc-location','listing-execute','listing-include-back-link','listing-title','listing-date','listing-author','listing-categories','listing-pub-info','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-include-back-link","listing-title","listing-date","listing-author","listing-categories","listing-pub-info","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-toc"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-date-format","listing-toc","listing-toc-title","listing-toc-location","listing-execute","listing-include-back-link","listing-title","listing-date","listing-author","listing-categories","listing-pub-info","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -206,8 +206,16 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(9)</span></div><div class="category" data-category="Asia">Asia <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Bicameralism">Bicameralism <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Brazil">Brazil <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Cabinet Termination">Cabinet Termination <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Coalitional Presidentialism">Coalitional Presidentialism <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Government Formation">Government Formation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Latin America">Latin America <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Party Switching">Party Switching <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Portfolio Allocation">Portfolio Allocation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Pre-Electoral Coalitions">Pre-Electoral Coalitions <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Presidentialism">Presidentialism <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Public Policy">Public Policy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QCA">QCA <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Upper Chamber">Upper Chamber <span class="quarto-category-count">(2)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#articles" id="toc-articles" class="nav-link active" data-scroll-target="#articles">Articles</a></li>
+  <li><a href="#book-chapters" id="toc-book-chapters" class="nav-link" data-scroll-target="#book-chapters">Book Chapters</a></li>
+  <li><a href="#working-papers" id="toc-working-papers" class="nav-link" data-scroll-target="#working-papers">Working Papers</a></li>
+  </ul>
+</nav>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(10)</span></div><div class="category" data-category="Asia">Asia <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Bicameralism">Bicameralism <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Brazil">Brazil <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Cabinet Termination">Cabinet Termination <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Coalitional Presidentialism">Coalitional Presidentialism <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Constitution-Making Process">Constitution-Making Process <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Government Formation">Government Formation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Latin America">Latin America <span class="quarto-category-count">(7)</span></div><div class="category" data-category="Party Switching">Party Switching <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Portfolio Allocation">Portfolio Allocation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Pre-Electoral Coalitions">Pre-Electoral Coalitions <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Presidentialism">Presidentialism <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Public Policy">Public Policy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QCA">QCA <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Upper Chamber">Upper Chamber <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Written Constitutions">Written Constitutions <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -233,7 +241,80 @@ ul.task-list li input[type="checkbox"] {
 <div id="listing-articles" class="quarto-listing quarto-listing-container-custom">
 <div class="research project-list">
 <ul class="list">
-        <li class="project" data-index="0" data-categories="Coalitional Presidentialism,Latin America,Government Formation,Pre-Electoral Coalitions,Presidentialism" data-listing-date-sort="1727042400000" data-listing-file-modified-sort="1727510139843" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+        <li class="project" data-index="0" data-categories="Brazil,Party Switching,Upper Chamber" data-listing-date-sort="1727560800000" data-listing-file-modified-sort="1727624393987" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+            <div class="project-content listing-pub-info">
+                <p><strong>L. Couto</strong>, <a href="http://lattes.cnpq.br/5139407303038024"> A. V. Lopes</a>, <a href="http://www.pesquisar.unb.br/professor/adrian-nicolas-albala-young/"> A. Albala</a>, and V. Paley. "Party Switching in Elected Upper Chambers: The Case of the Brazilian Senate."</p>
+            </div>
+            <div class="project-categories">
+                    <div class="project-category"><a href="#category=Brazil">
+                            Brazil
+                        </a></div>
+                    <div class="project-category"><a href="#category=Party Switching">
+                            Party Switching
+                        </a></div>
+                    <div class="project-category"><a href="#category=Upper Chamber">
+                            Upper Chamber
+                        </a></div>
+            </div>
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    <li class="project-link details">
+                        <a href="../research/articles/1. couto_et_al2024/index.html" class="listing-name">
+                            <i class="fa-solid fa-circle-info"></i> Full details »
+                        </a>
+                    </li>
+                    <li class="project-link">
+                        <a href="couto_et_al2024.pdf">
+                            <i class="fa-solid fa-file-pdf"></i> Preprint
+                        </a>
+                    </li>
+                    <li class="project-link">
+                        <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/G0E6HW">
+                            <i class="fa-solid fa-file-pdf"></i> Replication Materials
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="project" data-index="1" data-categories="Constitution-Making Process,Latin America,QCA,Written Constitutions" data-listing-date-sort="1727560800000" data-listing-file-modified-sort="1727625163202" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+            <div class="project-content listing-pub-info">
+                <p><strong>L. Couto</strong>, <a href="http://lattes.cnpq.br/5139407303038024"> A. V. Lopes</a>, and <a href="http://www.pesquisar.unb.br/professor/adrian-nicolas-albala-young/"> A. Albala</a>. "A Constitution I Am Used To? Constitutional Endurance and Replacement in Democratic Latin America." <em>Brazilian Political Science Review</em> 19.1, 2025, pp. 1-29. DOI: <a href="https://doi.org/10.1590/1981-3821202500010001"><code>doi.org/10.1590/1981-3821202500010001</code></a>.</p>
+            </div>
+            <div class="project-categories">
+                    <div class="project-category"><a href="#category=Constitution-Making Process">
+                            Constitution-Making Process
+                        </a></div>
+                    <div class="project-category"><a href="#category=Latin America">
+                            Latin America
+                        </a></div>
+                    <div class="project-category"><a href="#category=QCA">
+                            QCA
+                        </a></div>
+                    <div class="project-category"><a href="#category=Written Constitutions">
+                            Written Constitutions
+                        </a></div>
+            </div>
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    <li class="project-link details">
+                        <a href="../research/articles/2. couto_et_al2024_2/index.html" class="listing-name">
+                            <i class="fa-solid fa-circle-info"></i> Full details »
+                        </a>
+                    </li>
+                    <li class="project-link">
+                        <a href="https://www.scielo.br/j/bpsr/a/hcPbyGFy5sPCHxRqcKbRp4c/">
+                            <i class="fa-solid fa-file-pdf"></i> Published Version
+                        </a>
+                    </li>
+                    <li class="project-link">
+                        <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DOR817">
+                            <i class="fa-solid fa-file-pdf"></i> Replication Materials
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="project" data-index="2" data-categories="Coalitional Presidentialism,Latin America,Government Formation,Pre-Electoral Coalitions,Presidentialism" data-listing-date-sort="1727042400000" data-listing-file-modified-sort="1727623567000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
             <div class="project-content listing-pub-info">
                 <p><strong>L. Couto</strong>. "Government Formation in Presidentialism: disentangling the combined effects of pre-electoral coalitions and legislative polarisation." <em>Latin American Politics and Society</em> 2024, pp. 1-20. DOI: <a href="https://doi.org/10.1017/lap.2024.30"><code>doi.org/10.1017/lap.2024.30</code></a>.</p>
             </div>
@@ -257,19 +338,29 @@ ul.task-list li input[type="checkbox"] {
             <div class="project-details-listing">
                 <ul class="project-links">
                     <li class="project-link details">
-                        <a href="../research/articles/1. couto/index.html" class="listing-name">
+                        <a href="../research/articles/3. couto/index.html" class="listing-name">
                             <i class="fa-solid fa-circle-info"></i> Full details »
                         </a>
                     </li>
                     <li class="project-link">
+                        <a href="https://doi.org/10.1017/lap.2024.30">
+                            <i class="fa-solid fa-file-pdf"></i> Published Version
+                        </a>
+                    </li>
+                    <li class="project-link">
                         <a href="couto2024.pdf">
-                            <i class=""></i> PDF
+                            <i class="fa-solid fa-file-pdf"></i> Preprint
+                        </a>
+                    </li>
+                    <li class="project-link">
+                        <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/HFMMFV">
+                            <i class="fa-solid fa-file-pdf"></i> Replication Materials
                         </a>
                     </li>
                 </ul>
             </div>
         </li>
-        <li class="project" data-index="1" data-categories="Cabinet Termination,Coalitional Presidentialism,Latin America,Pre-Electoral Coalitions,Presidentialism" data-listing-date-sort="1646953200000" data-listing-file-modified-sort="1704309589047" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+        <li class="project" data-index="3" data-categories="Cabinet Termination,Coalitional Presidentialism,Latin America,Pre-Electoral Coalitions,Presidentialism" data-listing-date-sort="1646953200000" data-listing-file-modified-sort="1727625789482" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
             <div class="project-content listing-pub-info">
                 <p><a href="http://www.pesquisar.unb.br/professor/adrian-nicolas-albala-young/"> A. Albala</a>, <a href="https://andreborges.org/pt/"> A. Borges</a>, and <strong>L. Couto</strong>. “Pre-electoral coalitions and cabinet stability in presidential systems.” <em>The British Journal of Politics and International Relations</em> 25.1, 2023, pp. 64-82. DOI: <a href="https://doi.org/10.1177/13691481211056852"><code>doi.org/10.1177/13691481211056852</code></a>.</p>
             </div>
@@ -293,19 +384,24 @@ ul.task-list li input[type="checkbox"] {
             <div class="project-details-listing">
                 <ul class="project-links">
                     <li class="project-link details">
-                        <a href="../research/articles/2. albala-borges-couto/index.html" class="listing-name">
+                        <a href="../research/articles/4. albala-borges-couto/index.html" class="listing-name">
                             <i class="fa-solid fa-circle-info"></i> Full details »
                         </a>
                     </li>
                     <li class="project-link">
                         <a href="https://doi.org/10.1177/13691481211056852">
-                            <i class="fa-solid fa-file-pdf"></i> PDF
+                            <i class="fa-solid fa-file-pdf"></i> Published Version
+                        </a>
+                    </li>
+                    <li class="project-link">
+                        <a href="albala_et_al2.pdf">
+                            <i class="fa-solid fa-file-pdf"></i> Preprint
                         </a>
                     </li>
                 </ul>
             </div>
         </li>
-        <li class="project" data-index="2" data-categories="Asia,Coalitional Presidentialism,Latin America,Pre-Electoral Coalitions,Presidentialism" data-listing-date-sort="1646953200000" data-listing-file-modified-sort="1685642454873" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+        <li class="project" data-index="4" data-categories="Asia,Coalitional Presidentialism,Latin America,Pre-Electoral Coalitions,Presidentialism" data-listing-date-sort="1646953200000" data-listing-file-modified-sort="1727625918299" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
             <div class="project-content listing-pub-info">
                 <p><a href="http://www.pesquisar.unb.br/professor/adrian-nicolas-albala-young/"> A. Albala</a> and <strong>L. Couto</strong>. “Question of Timing: Pre-Electoral Coalitions in Multiparty Presidential Regimes.” <em>Brazilian Political Science Review</em> 17.1, 2023, pp. 1-28. DOI: <a href="doi.org/10.7910/DVN/9FSI8S"><code>doi.org/10.7910/DVN/9FSI8S</code></a>.</p>
             </div>
@@ -329,19 +425,19 @@ ul.task-list li input[type="checkbox"] {
             <div class="project-details-listing">
                 <ul class="project-links">
                     <li class="project-link details">
-                        <a href="../research/articles/3. albala-couto/index.html" class="listing-name">
+                        <a href="../research/articles/5. albala-couto/index.html" class="listing-name">
                             <i class="fa-solid fa-circle-info"></i> Full details »
                         </a>
                     </li>
                     <li class="project-link">
                         <a href="albala-couto.pdf">
-                            <i class="fa-solid fa-file-pdf"></i> PDF
+                            <i class="fa-solid fa-file-pdf"></i> Published Version
                         </a>
                     </li>
                 </ul>
             </div>
         </li>
-        <li class="project" data-index="3" data-categories="Bicameralism,Coalitional Presidentialism,Latin America,Portfolio Allocation,Presidentialism" data-listing-date-sort="1646953200000" data-listing-file-modified-sort="1685642532246" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+        <li class="project" data-index="5" data-categories="Bicameralism,Coalitional Presidentialism,Latin America,Portfolio Allocation,Presidentialism" data-listing-date-sort="1646953200000" data-listing-file-modified-sort="1727626005431" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
             <div class="project-content listing-pub-info">
                 <p><strong>L. Couto</strong> and <a href="http://www.pesquisar.unb.br/professor/adrian-nicolas-albala-young/"> A. Albala</a>. “A Coalescência Revisitada: O Cálculo Presidencial no Bicameralismo.” <em>Dados</em> 66.4, 2023, pp. 1-45. DOI: <a href="10.1590/dados.2023.66.4.304"><code>10.1590/dados.2023.66.4.304</code></a>.</p>
             </div>
@@ -365,19 +461,24 @@ ul.task-list li input[type="checkbox"] {
             <div class="project-details-listing">
                 <ul class="project-links">
                     <li class="project-link details">
-                        <a href="../research/articles/4. couto-albala-2/index.html" class="listing-name">
+                        <a href="../research/articles/6. couto-albala-2/index.html" class="listing-name">
                             <i class="fa-solid fa-circle-info"></i> Full details »
                         </a>
                     </li>
                     <li class="project-link">
                         <a href="Couto-Albala-2023.pdf">
-                            <i class="fa-solid fa-file-pdf"></i> PDF
+                            <i class="fa-solid fa-file-pdf"></i> Published Version
+                        </a>
+                    </li>
+                    <li class="project-link">
+                        <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/VW1HUF">
+                            <i class="fa-solid fa-file-pdf"></i> Replication Materials
                         </a>
                     </li>
                 </ul>
             </div>
         </li>
-        <li class="project" data-index="4" data-categories="Brazil,Bicameralism,Upper Chamber" data-listing-date-sort="1640905200000" data-listing-file-modified-sort="1704477923762" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+        <li class="project" data-index="6" data-categories="Brazil,Bicameralism,Upper Chamber" data-listing-date-sort="1640905200000" data-listing-file-modified-sort="1727626051997" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
             <div class="project-content listing-pub-info">
                 <p><a href="http://www.pesquisar.unb.br/professor/adrian-nicolas-albala-young/"> A. Albala</a>, <strong>L. Couto</strong>, <a href="http://lattes.cnpq.br/5139407303038024"> A. V. Lopes</a>, and <a href="https://www.researchgate.net/profile/Bernardo_Livramento"> B. Livramento</a>. “Uma Câmara Só Para Carimbar? Produção Legislativa do Senado Brasileiro.” <em>Revista Política Hoje</em> 30.2, 2021, pp. 79-96.</p>
             </div>
@@ -395,19 +496,19 @@ ul.task-list li input[type="checkbox"] {
             <div class="project-details-listing">
                 <ul class="project-links">
                     <li class="project-link details">
-                        <a href="../research/articles/5. albala-et-al/index.html" class="listing-name">
+                        <a href="../research/articles/7. albala-et-al/index.html" class="listing-name">
                             <i class="fa-solid fa-circle-info"></i> Full details »
                         </a>
                     </li>
                     <li class="project-link">
                         <a href="albala_et_al.pdf">
-                            <i class="fa-solid fa-file-pdf"></i> PDF
+                            <i class="fa-solid fa-file-pdf"></i> Published Version
                         </a>
                     </li>
                 </ul>
             </div>
         </li>
-        <li class="project" data-index="5" data-categories="Coalitional Presidentialism,Latin America,Presidentialism" data-listing-date-sort="1609455600000" data-listing-file-modified-sort="1704387147942" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+        <li class="project" data-index="7" data-categories="Coalitional Presidentialism,Latin America,Presidentialism" data-listing-date-sort="1609455600000" data-listing-file-modified-sort="1727626066892" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
             <div class="project-content listing-pub-info">
                 <p><strong>L. Couto</strong>,  <a href="https://scholar.google.com.br/citations?user=7pfI7n4AAAAJ&amp;hl=pt-BR&amp;oi=ao"> A. Soares</a>, and <a href="https://www.researchgate.net/profile/Bernardo_Livramento"> B. Livramento</a>. “Presidencialismo de coalizão: conceito e aplicação.” <em>Revista Brasileira de Ciência Política</em> 34, 2021, pp. 1-39. DOI: <a href="10.1590/0103-3352.2021.34.241841"><code>10.1590/0103-3352.2021.34.241841</code></a>.</p>
             </div>
@@ -425,13 +526,13 @@ ul.task-list li input[type="checkbox"] {
             <div class="project-details-listing">
                 <ul class="project-links">
                     <li class="project-link details">
-                        <a href="../research/articles/6. couto-soares-livramento/index.html" class="listing-name">
+                        <a href="../research/articles/8. couto-soares-livramento/index.html" class="listing-name">
                             <i class="fa-solid fa-circle-info"></i> Full details »
                         </a>
                     </li>
                     <li class="project-link">
                         <a href="couto-soares-livramento.pdf">
-                            <i class="fa-solid fa-file-pdf"></i> PDF
+                            <i class="fa-solid fa-file-pdf"></i> Published Version
                         </a>
                     </li>
                 </ul>
@@ -449,7 +550,7 @@ No matching items
 <div id="listing-book_chapters" class="quarto-listing quarto-listing-container-custom">
 <div class="research project-list">
 <ul class="list">
-        <li class="project" data-index="0" data-categories="QCA,Public Policy" data-listing-date-sort="1644534000000" data-listing-file-modified-sort="1685642990662" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+        <li class="project" data-index="0" data-categories="QCA,Public Policy" data-listing-date-sort="1644534000000" data-listing-file-modified-sort="1727626146255" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
             <div class="project-content listing-pub-info">
                 <p><strong>L. Couto</strong> and <a href="http://www.pesquisar.unb.br/professor/adrian-nicolas-albala-young/"> A. Albala</a>. "QCA para Políticas Públicas: uma abordagem configuracional para estudar o Estado em ação." In <em>Desafios Metodológicos das Políticas Públicas baseadas em evidências</em>. Ed. by I. Fernandes. 2022, pp. 231-254.</p>
             </div>
@@ -470,7 +571,7 @@ No matching items
                     </li>
                     <li class="project-link">
                         <a href="coutoalbala2022.pdf">
-                            <i class=""></i> PDF
+                            <i class=""></i> Published Version
                         </a>
                     </li>
                 </ul>
@@ -522,36 +623,6 @@ No matching items
                     <li class="project-link">
                         <a href="Manuscript_DR.pdf">
                             <i class=""></i> PDF
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </li>
-        <li class="project" data-index="1" data-categories="Brazil,Party Switching,Upper Chamber" data-listing-date-sort="1641164400000" data-listing-file-modified-sort="1726909098699" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-            <div class="project-content listing-pub-info">
-                <p><strong>L. Couto</strong>, <a href="http://lattes.cnpq.br/5139407303038024"> A. V. Lopes</a>, <a href="http://www.pesquisar.unb.br/professor/adrian-nicolas-albala-young/"> A. Albala</a>, and V. Paley. "Party Switching in Elected Upper Chambers: The Case of the Brazilian Senate."</p>
-            </div>
-            <div class="project-categories">
-                    <div class="project-category"><a href="#category=Brazil">
-                            Brazil
-                        </a></div>
-                    <div class="project-category"><a href="#category=Party Switching">
-                            Party Switching
-                        </a></div>
-                    <div class="project-category"><a href="#category=Upper Chamber">
-                            Upper Chamber
-                        </a></div>
-            </div>
-            <div class="project-details-listing">
-                <ul class="project-links">
-                    <li class="project-link details">
-                        <a href="../research/working_papers/couto_et_al.1/index.html" class="listing-name">
-                            <i class="fa-solid fa-circle-info"></i> Full details »
-                        </a>
-                    </li>
-                    <li class="project-link">
-                        <a href="couto_et_al2024.pdf">
-                            <i class="fa-solid fa-file-pdf"></i> PDF
                         </a>
                     </li>
                 </ul>

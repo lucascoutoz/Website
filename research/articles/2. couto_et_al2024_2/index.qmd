@@ -1,0 +1,34 @@
+---
+title: "A Constitution I Am Used To? Constitutional Endurance and Replacement in Democratic Latin America"
+date: 2024-09-29
+author:
+  - name: Lucas Couto
+    url: https://lucascoutoz.netlify.app/
+    orcid: 0000-0003-3278-499X
+    affiliation: University of Brasília
+  - name: Amanda Vitória Lopes
+    url: http://lattes.cnpq.br/5139407303038024
+    orcid: 0000-0002-9906-0622
+    affiliation: University of Brasília
+  - name: Adrián Albala
+    url: http://www.pesquisar.unb.br/professor/adrian-nicolas-albala-young
+    orcid: 0000-0002-0444-2952
+    affiliation: University of Brasília
+categories:
+  - Constitution-Making Process
+  - Latin America
+  - QCA
+  - Written Constitutions
+  
+pub-info:
+  reference: >-
+   <strong>L. Couto</strong>, <a href="http://lattes.cnpq.br/5139407303038024"> A. V. Lopes</a>, and <a href="http://www.pesquisar.unb.br/professor/adrian-nicolas-albala-young/"> A. Albala</a>. "A Constitution I Am Used To? Constitutional Endurance and Replacement in Democratic Latin America." <em>Brazilian Political Science Review</em> 19.1, 2025, pp. 1-29. DOI: <a href="https://doi.org/10.1590/1981-3821202500010001"><code>doi.org/10.1590/1981-3821202500010001</code></a>.
+  links:
+    - icon: fa-solid fa-file-pdf
+      name: Published Version
+      url: https://www.scielo.br/j/bpsr/a/hcPbyGFy5sPCHxRqcKbRp4c/
+    - icon: fa-solid fa-file-pdf
+      name: Replication Materials
+      url: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DOR817
+  
+---
