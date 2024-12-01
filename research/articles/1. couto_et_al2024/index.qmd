@@ -28,7 +28,7 @@ pub-info:
   links:
     - icon: fa-solid fa-file-pdf
       name: Published Version
-      url: doi.org/10.1177/14789299241289757
+      url: https://journals.sagepub.com/doi/10.1177/14789299241289757
     - icon: fa-solid fa-file-pdf
       name: Preprint
       url: couto_et_al2024.pdf
