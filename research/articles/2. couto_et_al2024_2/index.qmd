@@ -1,6 +1,6 @@
 ---
 title: "A Constitution I Am Used To? Constitutional Endurance and Replacement in Democratic Latin America"
-date: 2024-09-29
+date: 2025-01-01
 author:
   - name: Lucas Couto
     url: https://lucascoutoz.netlify.app/
