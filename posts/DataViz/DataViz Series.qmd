@@ -38,8 +38,6 @@ title-block-banner: true
 ![Portfolio Allocation in Africa](presafrica.png)
 ![Pinx Tax in LA](pinktax.png)
 
-![Support for far-right parties in 2017 Germany](ge.png)
-
 
 ![Ethnicity and Party System Institutionalisation in Africa](ethnicpsiafrica.png)
 

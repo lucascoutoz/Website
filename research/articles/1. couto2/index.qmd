@@ -1,0 +1,29 @@
+---
+title: "The Drivers of Resemblance in Presidential Regimes: explaining the conversion of pre-electoral coalitions into coalition cabinets"
+date: 2026-01-01
+author:
+  - name: Lucas Couto
+    url: https://lucascoutoz.netlify.app/
+    orcid: 0000-0003-3278-499X
+    affiliation: Aarhus University
+categories:
+  - Coalitional Presidentialism
+  - Government Formation
+  - Latin America
+  - Pre-Electoral Coalitions
+  - Presidentialism 
+  - QCA
+pub-info:
+  reference: >-
+    <strong>L. Couto</strong>. "The Drivers of Resemblance in Presidential Regimes: explaining the conversion of pre-electoral coalitions into coalition cabinets." Forthcoming in <em>European Political Science Review</em>.
+  links:
+    - icon: fa-solid fa-file-pdf
+      name: Published Version
+      #url: https://doi.org/10.1017/lap.2024.30
+    - icon: fa-solid fa-file-pdf
+      name: Preprint
+      url: couto2026.pdf
+    - icon: fa-solid fa-file-pdf
+      name: Replication Materials
+      url: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/YL2TGH
+---

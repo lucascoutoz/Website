@@ -17,16 +17,7 @@
   {
     "listing": "/blog.html",
     "items": [
-      "/posts/DataViz/DataViz Series.html",
-      "/posts/i2024_9/trust_par_LA.html",
-      "/posts/h2024_8/dk_immi.html",
-      "/posts/g2024_7/rai_east_asia.html",
-      "/posts/f2024_6/brazil-left.html",
-      "/posts/e2024_5/hyper-chile.html",
-      "/posts/d2024_4/nz-parties.html",
-      "/posts/c2024_3/ideology-head-of-gov.html",
-      "/posts/b2024_2/physical-violence-parliament.html",
-      "/posts/new_blog_post/post.html"
+      "/posts/DataViz/DataViz Series.html"
     ]
   },
   {
@@ -36,16 +27,16 @@
   {
     "listing": "/research/index.html",
     "items": [
-      "/research/articles/3. couto/index.html",
-      "/research/articles/2. couto_et_al2024_2/index.html",
-      "/research/articles/1. couto_et_al2024/index.html",
-      "/research/articles/4. albala-borges-couto/index.html",
-      "/research/articles/5. albala-couto/index.html",
-      "/research/articles/6. couto-albala-2/index.html",
-      "/research/articles/7. albala-et-al/index.html",
-      "/research/articles/8. couto-soares-livramento/index.html",
-      "/research/book_chapters/couto-albala-1/index.html",
-      "/research/working_papers/couto_dr/index.html"
+      "/research/articles/1. couto2/index.html",
+      "/research/articles/2. couto_et_al2024/index.html",
+      "/research/articles/4. couto/index.html",
+      "/research/articles/3. couto_et_al2024_2/index.html",
+      "/research/articles/5. albala-borges-couto/index.html",
+      "/research/articles/6. albala-couto/index.html",
+      "/research/articles/7. couto-albala-2/index.html",
+      "/research/articles/8. albala-et-al/index.html",
+      "/research/articles/9. couto-soares-livramento/index.html",
+      "/research/book_chapters/couto-albala-1/index.html"
     ]
   }
 ]
