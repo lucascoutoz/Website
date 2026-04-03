@@ -27,7 +27,7 @@ pub-info:
     - icon: fa-solid fa-file-pdf
       name: Published Version
       url: https://www.scielo.br/j/bpsr/a/hcPbyGFy5sPCHxRqcKbRp4c/
-    - icon: fa-solid fa-file-pdf
+    - icon: fa-solid fa-file-code
       name: Replication Materials
       url: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DOR817
   

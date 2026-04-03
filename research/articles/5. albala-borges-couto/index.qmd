@@ -28,7 +28,7 @@ pub-info:
     - name: Published Version
       url: https://doi.org/10.1177/13691481211056852
       icon: fa-solid fa-file-pdf
-    - icon: fa-solid fa-file-pdf
+    - icon: fa-solid fa-file
       name: Preprint
       url: albala_et_al2.pdf
 doi: 10.1177/13691481211056852

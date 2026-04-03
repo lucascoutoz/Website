@@ -25,7 +25,7 @@ pub-info:
       icon: fa-solid fa-file-pdf
     - name: Replication Materials
       url: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/VW1HUF
-      icon: fa-solid fa-file-pdf    
+      icon: fa-solid fa-file-code    
 doi: 10.1590/dados.2023.66.4.304
 toc: true
 ---

@@ -29,10 +29,10 @@ pub-info:
     - icon: fa-solid fa-file-pdf
       name: Published Version
       url: https://journals.sagepub.com/doi/10.1177/14789299241289757
-    - icon: fa-solid fa-file-pdf
+    - icon: fa-solid fa-file
       name: Preprint
       url: couto_et_al2024.pdf
-    - icon: fa-solid fa-file-pdf
+    - icon: fa-solid fa-file-code
       name: Replication Materials
       url: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/G0E6HW
 
